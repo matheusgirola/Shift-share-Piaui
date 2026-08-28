@@ -1,0 +1,1370 @@
+Coluna;Região Natural
+CNAE 2.0 Subclasse;Norte;Nordeste;Sudeste;Sul;Centro-Oeste
+Cultivo de arroz;2110;3057;4347;18043;789
+Cultivo de milho;184;630;7092;1927;1316
+Cultivo de trigo;8;16;173;195;59
+Cultivo de outros cereais não especificados anteriormente;656;4769;7170;12194;5078
+Cultivo de algodão herbáceo;56;4862;451;61;4891
+Cultivo de juta;38;3;12;4;39
+Cultivo de outras fibras de lavoura temporária não especificadas anteriormente;70;528;1842;772;189
+Cultivo de cana-de-açúcar;965;36754;95247;11132;19055
+Cultivo de fumo;0;1588;11;74;2
+Cultivo de soja;3076;12395;9221;23705;64031
+Cultivo de amendoim;1;2;390;1;0
+Cultivo de girassol;0;27;42;1;4
+Cultivo de mamona;0;17;5;4;0
+Cultivo de outras oleaginosas de lavoura temporária não especificadas anteriormente;113;490;2872;734;1058
+Cultivo de abacaxi;69;73;420;24;19
+Cultivo de alho;0;24;432;360;280
+Cultivo de batata-inglesa;0;2521;3451;1403;311
+Cultivo de cebola;2;105;718;203;23
+Cultivo de feijão;25;300;451;151;166
+Cultivo de mandioca;40;92;323;973;86
+Cultivo de melão;0;9834;33;12;0
+Cultivo de melancia;22;264;77;66;25
+Cultivo de tomate rasteiro;12;57;2740;387;320
+Cultivo de outras plantas de lavoura temporária não especificadas anteriormente;314;2233;13293;5056;2212
+Horticultura, exceto morango;586;2050;16212;3724;2504
+Cultivo de morango;0;0;680;498;9
+Cultivo de flores e plantas ornamentais;265;1585;15661;1590;556
+Cultivo de laranja;172;1740;47362;1565;341
+Cultivo de uva;18;15039;2051;920;54
+Cultivo de açaí;48;31;59;2;1
+Cultivo de banana;126;5779;11329;1123;227
+Cultivo de caju;1;808;56;4;1
+Cultivo de cítricos, exceto laranja;81;1546;1504;168;45
+Cultivo de coco-da-baía;2328;1819;417;3;33
+Cultivo de guaraná;55;15;0;0;0
+Cultivo de maçã;0;0;70;12517;0
+Cultivo de mamão;21;3258;2405;11;7
+Cultivo de maracujá;2;143;212;11;6
+Cultivo de manga;21;5838;386;0;8
+Cultivo de pêssego;0;0;391;254;0
+Cultivo de frutas de lavoura permanente não especificadas anteriormente;240;4078;3922;1402;347
+Cultivo de café;27;6246;76690;1710;158
+Cultivo de cacau;130;8179;947;1;4
+Cultivo de chá-da-índia;0;5;27;2;0
+Cultivo de erva-mate;0;0;7;346;1
+Cultivo de pimenta-do-reino;955;113;60;0;0
+Cultivo de plantas para condimento, exceto pimenta-do-reino;8;29;83;36;14
+Cultivo de dendê;11874;53;56;1;1
+Cultivo de seringueira;121;1226;2184;8;2267
+Cultivo de outras plantas de lavoura permanente não especificadas anteriormente;695;1354;3836;1974;272
+Produção de sementes certificadas, exceto de forrageiras para pasto;253;761;2623;3346;4161
+Produção de sementes certificadas de forrageiras para formação de pasto;26;108;488;63;601
+Produção de mudas e outras formas de propagação vegetal, certificadas;213;722;2909;458;229
+Criação de bovinos para corte;39908;24475;71675;25590;93676
+Criação de bovinos para leite;3100;7564;57674;4696;12648
+Criação de bovinos, exceto para corte e leite;1522;2574;5249;1339;3106
+Criação de bufalinos;255;179;259;116;86
+Criação de eqüinos;56;461;4160;1142;205
+Criação de asininos e muares;93;134;368;88;46
+Criação de caprinos;36;293;226;51;28
+Criação de ovinos, inclusive para produção de lã;18;422;445;280;78
+Criação de suínos;90;740;9386;9728;4088
+Criação de frangos para corte;2930;15211;19955;7160;3322
+Produção de pintos de um dia;160;1329;6798;7446;936
+Criação de outros galináceos, exceto para corte;45;889;772;793;318
+Criação de aves, exceto galináceos;549;810;1169;861;703
+Produção de ovos;1038;6530;16211;8156;4263
+Apicultura;24;154;311;140;46
+Criação de animais de estimação;12;34;167;47;44
+Criação de escargô;0;0;6;0;0
+Criação de bicho-da-seda;0;2;56;55;3
+Criação de outros animais não especificados anteriormente;184;634;2711;735;510
+Serviço de pulverização e controle de pragas agrícolas;191;592;3057;1722;1153
+Serviço de poda de árvores para lavouras;42;95;304;462;85
+Serviço de preparação de terreno, cultivo e colheita;956;3268;16428;3409;2714
+Atividades de apoio à agricultura não especificadas anteriormente;3074;6381;34382;14187;6784
+Serviço de inseminação artificial em animais;21;28;232;49;57
+Serviço de tosquiamento de ovinos;0;5;4;4;0
+Serviço de manejo de animais;130;102;656;992;276
+Atividades de apoio à pecuária não especificadas anteriormente;1075;2197;11304;5678;5117
+Atividades de pós-colheita;98;682;1201;2268;1015
+Caça e serviços relacionados;0;3;8;1;4
+Cultivo de eucalipto;1608;3346;12503;762;4431
+Cultivo de acácia-negra;178;1;10;163;1
+Cultivo de pinus;315;63;1351;5448;382
+Cultivo de teca;95;0;31;5;441
+Cultivo de espécies madeireiras, exceto eucalipto, acácia-negra, pinus e teca;137;119;328;130;77
+Cultivo de mudas em viveiros florestais;632;480;2415;1528;547
+Extração de madeira em florestas plantadas;777;1080;3724;7064;1160
+Produção de carvão vegetal - florestas plantadas;802;1841;6266;393;716
+Produção de casca de acácia-negra - florestas plantadas;0;2;1;62;29
+Produção de produtos não-madeireiros não especificados anteriormente em florestas plantadas;17;159;1702;1207;14
+Extração de madeira em florestas nativas;1310;317;93;159;765
+Produção de carvão vegetal - florestas nativas;767;963;202;53;607
+Coleta de castanha-do-pará em florestas nativas;36;0;13;0;13
+Coleta de látex em florestas nativas;4;58;251;0;34
+Coleta de palmito em florestas nativas;3;0;18;17;6
+Conservação de florestas nativas;11;446;243;36;105
+Coleta de produtos não-madeireiros não especificados anteriormente em florestas nativas;43;38;492;107;170
+Atividades de apoio à produção florestal;2913;10384;17403;7222;1987
+Pesca de peixes em água salgada;219;498;1700;2794;0
+Pesca de crustáceos e moluscos em água salgada;254;215;282;33;0
+Coleta de outros produtos marinhos;1;11;4;20;0
+Atividades de apoio à pesca em água salgada;10;12;114;105;6
+Pesca de peixes em água doce;55;37;98;18;70
+Pesca de crustáceos e moluscos em água doce;10;5;0;9;3
+Coleta de outros produtos aquáticos de água doce;33;0;17;0;0
+Atividades de apoio à pesca em água doce;102;10;19;14;20
+Criação de peixes em água salgada e salobra;15;96;107;25;5
+Criação de camarões em água salgada e salobra;81;4495;11;43;0
+Criação de ostras e mexilhões em água salgada e salobra;0;17;0;47;1
+Criação de peixes ornamentais em água salgada e salobra;0;7;7;0;0
+Atividades de apoio à aqüicultura em água salgada e salobra;0;56;92;21;9
+Cultivos e semicultivos da aqüicultura em água salgada e salobra não especificados anteriormente;3;396;5;4;2
+Criação de peixes em água doce;567;1026;1470;312;603
+Criação de camarões em água doce;0;483;16;2;0
+Criação de ostras e mexilhões em água doce;0;9;0;1;0
+Criação de peixes ornamentais em água doce;7;23;72;42;6
+Ranicultura;3;5;41;6;233
+Criação de jacaré;0;0;9;2;0
+Atividades de apoio à aqüicultura em água doce;9;1155;115;16;14
+Cultivos e semicultivos da aqüicultura em água doce não especificados anteriormente;21;163;70;33;30
+Extração de carvão mineral;28;51;159;4846;57
+Beneficiamento de carvão mineral;14;34;30;114;3
+Extração de petróleo e gás natural;1126;10783;21878;148;29
+Extração e beneficiamento de xisto;0;0;5;0;0
+Extração e beneficiamento de areias betuminosas;16;5;15;15;0
+Extração de minério de ferro;10631;464;36771;0;1541
+Pelotização, sinterização e outros beneficiamentos de minério de ferro;0;40;6558;0;0
+Extração de minério de alumínio;2978;37;383;0;0
+Beneficiamento de minério de alumínio;473;55;1218;49;0
+Extração de minério de estanho;481;2;8;0;7
+Beneficiamento de minério de estanho;237;0;0;0;10
+Extração de minério de manganês;64;11;273;0;89
+Beneficiamento de minério de manganês;0;0;19;0;1
+Extração de minério de metais preciosos;1336;2049;6129;249;3089
+Beneficiamento de minério de metais preciosos;487;660;400;10;246
+Extração de minerais radioativos;0;0;27;0;3
+Extração de minérios de nióbio e titânio;2;26;9;40;0
+Extração de minério de tungstênio;1;645;1;0;0
+Extração de minério de níquel;1087;615;361;0;974
+Extração de minérios de cobre, chumbo, zinco e outros minerais metálicos não-ferrosos não especificados anteriormente;1978;2834;1981;6;485
+Beneficiamento de minérios de cobre, chumbo, zinco e outros minerais metálicos não-ferrosos não especificados anteriormente;2;177;175;26;1434
+Extração de ardósia e beneficiamento associado;12;146;987;127;4
+Extração de granito e beneficiamento associado;100;1691;7309;96;13
+Extração de mármore e beneficiamento associado;7;613;433;71;32
+Extração de calcário e dolomita e beneficiamento associado;458;1149;2842;1921;1806
+Extração de gesso e caulim;173;568;186;119;0
+Extração de areia, cascalho ou pedregulho e beneficiamento associado;1144;1999;10304;3413;1640
+Extração de argila e beneficiamento associado;212;497;1791;405;78
+Extração de saibro e beneficiamento associado;23;0;101;355;0
+Extração de basalto e beneficiamento associado;45;66;2424;1516;117
+Beneficiamento de gesso e caulim associado à extração;520;246;20;14;0
+Extração e britamento de pedras e outros materiais para construção e beneficiamento associado;963;4959;11597;5513;1864
+Extração de minerais para fabricação de adubos, fertilizantes e outros produtos químicos;123;1686;1931;578;825
+Extração de sal marinho;0;2438;742;0;0
+Extração de sal-gema;0;160;0;0;0
+Refino e outros tratamentos do sal;45;1242;44;343;0
+Extração de gemas (pedras preciosas e semipreciosas);88;76;935;33;30
+Extração de grafita;0;151;891;0;0
+Extração de quartzo;10;128;922;0;6
+Extração de amianto;0;1;12;0;689
+Extração de outros minerais não-metálicos não especificados anteriormente;629;3065;5130;1535;793
+Atividades de apoio à extração de petróleo e gás natural;672;3409;24551;193;5
+Atividades de apoio à extração de minério de ferro;274;498;856;6;10
+Atividades de apoio à extração de minerais metálicos não-ferrosos;33;214;53;0;149
+Atividades de apoio à extração de minerais não-metálicos;62;865;1504;548;211
+Frigorífico - abate de bovinos;21452;4408;33869;14816;50087
+Frigorífico - abate de eqüinos;0;0;7;109;0
+Frigorífico - abate de ovinos e caprinos;10;171;8;17;54
+Frigorífico - abate de bufalinos;0;40;0;0;0
+Matadouro - abate de reses sob contrato, exceto abate de suínos;715;875;1042;658;578
+Abate de aves;1848;6454;36786;98887;19157
+Abate de pequenos animais;109;850;272;71;69
+Frigorífico - abate de suínos;101;185;7145;56671;23611
+Matadouro - abate de suínos sob contrato;1;0;72;530;5
+Fabricação de produtos de carne;530;4372;30484;12254;2324
+Preparação de subprodutos do abate;539;284;2386;3424;1813
+Preservação de peixes, crustáceos e moluscos;562;1613;942;1884;86
+Fabricação de conservas de peixes, crustáceos e moluscos;929;1034;2646;6917;566
+Fabricação de conservas de frutas;1408;6015;7156;3804;1411
+Fabricação de conservas de palmito;443;377;411;525;93
+Fabricação de conservas de legumes e outros vegetais, exceto palmito;144;85;2654;2769;4921
+Fabricação de sucos concentrados de frutas, hortaliças e legumes;300;3262;6605;1485;176
+Fabricação de sucos de frutas, hortaliças e legumes, exceto concentrados;226;1627;4693;402;99
+Fabricação de óleos vegetais em bruto, exceto óleo de milho;1569;1937;3132;7275;5505
+Fabricação de óleos vegetais refinados, exceto óleo de milho;555;865;3132;748;2660
+Fabricação de margarina e outras gorduras vegetais e de óleos não-comestíveis de animais;1;579;3190;896;204
+Preparação do leite;392;1380;7479;3371;783
+Fabricação de laticínios;5189;10076;43193;18624;9554
+Fabricação de sorvetes e outros gelados comestíveis;1445;6288;9652;4125;2316
+Beneficiamento de arroz;1288;1331;2833;12713;2350
+Fabricação de produtos do arroz;3;22;100;836;37
+Moagem de trigo e fabricação de derivados;495;6427;7881;7870;808
+Fabricação de farinha de mandioca e derivados;98;358;1205;1971;165
+Fabricação de farinha de milho e derivados, exceto óleos de milho;291;3756;1490;1611;436
+Fabricação de amidos e féculas de vegetais;22;656;2792;2987;1128
+Fabricação de óleo de milho em bruto;0;0;1;125;7
+Fabricação de óleo de milho refinado;0;0;0;0;0
+Fabricação de alimentos para animais;1478;5365;19673;13319;5821
+Moagem e fabricação de produtos de origem vegetal não especificados anteriormente;731;6189;7582;5138;1072
+Fabricação de açúcar em bruto;3;114941;151066;30370;21331
+Fabricação de açúcar de cana refinado;4;6764;1849;6;26
+Fabricação de açúcar de cereais (dextrose) e de beterraba;0;0;1;0;0
+Beneficiamento de café;41;69;792;123;10
+Torrefação e moagem de café;541;5044;7264;1339;1586
+Fabricação de produtos à base de café;18;9;2585;1422;0
+Fabricação de produtos de panificação;0;0;0;0;0
+Fabricação de produtos de panificação industrial;1574;10763;26922;13527;3541
+Fabricação de produtos de padaria e confeitaria com predominância de produção própria;2328;16855;21075;9472;3584
+Fabricação de biscoitos e bolachas;1636;7311;21660;10605;3652
+Fabricação de produtos derivados do cacau e de chocolates;44;2516;17848;8330;193
+Fabricação de frutas cristalizadas, balas e semelhantes;79;896;5390;4419;93
+Fabricação de massas alimentícias;767;11859;24984;9264;1368
+Fabricação de especiarias, molhos, temperos e condimentos;296;1244;7161;1749;1495
+Fabricação de alimentos e pratos prontos;1842;2163;5373;2957;1103
+Fabricação de vinagres;12;590;513;222;6
+Fabricação de pós alimentícios;175;652;1542;767;258
+Fabricação de fermentos e leveduras;1;22;811;77;0
+Fabricação de gelo comum;500;1334;2286;430;451
+Fabricação de produtos para infusão (chá, mate, etc.);44;12;190;3315;33
+Fabricação de adoçantes naturais e artificiais;0;4;25;127;749
+Fabricação de alimentos dietéticos e complementos alimentares;0;4;6;3;1
+Fabricação de outros produtos alimentícios não especificados anteriormente;2161;9154;45954;16442;5787
+Fabricação de aguardente de cana-de-açúcar;19;6311;3214;341;92
+Fabricação de outras aguardentes e bebidas destiladas;6;1843;2730;608;160
+Fabricação de vinho;99;843;1589;3615;6
+Fabricação de malte, inclusive malte uísque;0;0;52;387;0
+Fabricação de cervejas e chopes;1795;8456;19252;3044;3465
+Fabricação de águas envasadas;1160;6369;5987;1811;1615
+Fabricação de refrigerantes;5296;14856;19187;8539;6744
+Fabricação de chá mate e outros chás prontos para consumo;0;2;482;69;1
+Fabricação de refrescos, xaropes e pós para refrescos, exceto refrescos de frutas;292;449;6337;153;617
+Fabricação de bebidas isotônicas;0;3;0;0;0
+Fabricação de outras bebidas não-alcoólicas não especificadas anteriormente;213;461;371;129;4
+Processamento industrial do fumo;0;12;2;2894;0
+Fabricação de cigarros;138;887;4043;4367;152
+Fabricação de cigarrilhas e charutos;0;174;5;17;0
+Fabricação de filtros para cigarros;0;0;15;0;0
+Fabricação de outros produtos do fumo, exceto cigarros, cigarrilhas e charutos;10;581;203;612;58
+Preparação e fiação de fibras de algodão;5;9771;8836;6635;1605
+Preparação e fiação de fibras têxteis naturais, exceto algodão;1747;1951;2452;924;25
+Fiação de fibras artificiais e sintéticas;0;1819;6535;3046;153
+Fabricação de linhas para costurar e bordar;0;870;4314;1782;7
+Tecelagem de fios de algodão;3;12975;14534;6914;1116
+Tecelagem de fios de fibras têxteis naturais, exceto algodão;161;1195;619;421;11
+Tecelagem de fios de fibras artificiais e sintéticas;28;2137;13788;3657;11
+Fabricação de tecidos de malha;12;3144;9218;12969;192
+Estamparia e texturização em fios, tecidos, artefatos têxteis e peças do vestuário;82;1535;10176;5455;198
+Alvejamento, tingimento e torção em fios, tecidos, artefatos têxteis e peças do vestuário;0;659;3248;7831;98
+Outros serviços de acabamento em fios, tecidos, artefatos têxteis e peças do vestuário;43;3428;5302;7320;575
+Fabricação de artefatos têxteis para uso doméstico;130;7437;26534;12999;2536
+Fabricação de artefatos de tapeçaria;63;491;4715;1034;824
+Fabricação de artefatos de cordoaria;2;348;1302;1649;30
+Fabricação de tecidos especiais, inclusive artefatos;47;1791;7978;4092;301
+Fabricação de outros produtos têxteis não especificados anteriormente;161;3815;30688;10798;1572
+Confecção de roupas íntimas;556;19084;46165;12796;5382
+Facção de roupas íntimas;82;2783;1499;596;264
+Confecção de peças do vestuário, exceto roupas íntimas e as confeccionadas sob medida;1527;71719;197469;139296;19578
+Confecção, sob medida, de peças do vestuário, exceto roupas íntimas;327;8792;23904;9020;2014
+Facção de peças do vestuário, exceto roupas íntimas;16;7052;15719;26966;3756
+Confecção de roupas profissionais, exceto sob medida;1209;2780;9887;3426;1463
+Confecção, sob medida, de roupas profissionais;645;1356;3731;1066;588
+Facção de roupas profissionais;105;159;377;447;75
+Fabricação de acessórios do vestuário, exceto para segurança e proteção;218;3826;8503;6869;820
+Fabricação de meias;0;3040;8658;581;1
+Fabricação de artigos do vestuário, produzidos em malharias e tricotagens, exceto meias;232;1362;5937;9351;3011
+Curtimento e outras preparações de couro;2264;5139;10355;14762;6583
+Fabricação de artigos para viagem, bolsas e semelhantes de qualquer material;28;2096;7929;5391;425
+Fabricação de artefatos de couro não especificados anteriormente;66;1555;6034;4149;790
+Fabricação de calçados de couro;97;63566;36283;60835;1469
+Acabamento de calçados de couro sob contrato;0;1010;6858;21023;18
+Fabricação de tênis de qualquer material;0;2123;9338;3882;210
+Fabricação de calçados de material sintético;30;29466;13977;19041;1299
+Fabricação de calçados de materiais não especificados anteriormente;9;14771;16422;3900;803
+Fabricação de partes para calçados, de qualquer material;0;2143;7616;11451;255
+Serrarias com desdobramento de madeira (Desativado);18151;1316;9635;32263;9866
+Serrarias sem desdobramento de madeira (Desativado);1387;248;1880;2395;937
+Serrarias com desdobramento de madeira em bruto;0;0;0;0;0
+Serrarias sem desdobramento de madeira em bruto  Resserragem;0;0;0;0;0
+Serviço de tratamento de madeira realizado sob contrato;0;0;0;0;0
+Fabricação de madeira laminada e de chapas de madeira compensada, prensada e aglomerada;5213;149;5647;27669;2210
+Fabricação de casas de madeira pré-fabricadas;30;85;599;331;49
+Fabricação de esquadrias de madeira e de peças de madeira para instalações industriais e comerciais;1072;2432;4907;16820;1412
+Fabricação de outros artigos de carpintaria para construção;167;1077;2900;1558;514
+Fabricação de artefatos de tanoaria e de embalagens de madeira;339;936;8193;4604;377
+Fabricação de artefatos diversos de madeira, exceto móveis;1429;1289;9961;10623;1098
+Fabricação de artefatos diversos de cortiça, bambu, palha, vime e outros materiais trançados, exceto móveis;7;161;385;441;106
+Fabricação de celulose e outras pastas para a fabricação de papel;627;3237;8123;2389;1727
+Fabricação de papel;1064;4476;13023;16694;859
+Fabricação de cartolina e papel-cartão;0;0;1710;2380;0
+Fabricação de embalagens de papel;147;2305;12632;6379;820
+Fabricação de embalagens de cartolina e papel-cartão;128;352;7042;1696;57
+Fabricação de chapas e de embalagens de papelão ondulado;1227;2558;21741;8406;721
+Fabricação de formulários contínuos;26;174;589;400;245
+Fabricação de produtos de papel, cartolina, papel-cartão e papelão ondulado para uso comercial e de escritório, exceto formulário contínuo;1133;1880;12412;5152;869
+Fabricação de fraldas descartáveis;0;1033;7207;963;2975
+Fabricação de absorventes higiênicos;0;173;1;3;0
+Fabricação de produtos de papel para uso doméstico e higiênico-sanitário não especificados anteriormente;98;867;5388;3164;162
+Fabricação de produtos de pastas celulósicas, papel, cartolina, papel-cartão e papelão ondulado não especificados anteriormente;299;703;8791;3225;1182
+Impressão de jornais;82;729;2764;356;237
+Impressão de livros, revistas e outras publicações periódicas;166;2397;12633;2164;1158
+Impressão de material de segurança;91;988;6446;582;100
+Impressão de material para uso publicitário;829;3849;9758;4894;1674
+Impressão de material para outros usos;1009;4583;19517;9275;2064
+Serviços de pré-impressão;619;1861;15161;3665;1289
+Serviços de acabamentos gráficos (Desativado);0;0;0;0;0
+Serviços de encadernação e plastificação;29;177;800;260;90
+Serviços de acabamentos gráficos, exceto encadernação e plastificação;171;1057;4217;1584;348
+Reprodução de som em qualquer suporte;1548;51;407;14;24
+Reprodução de vídeo em qualquer suporte;454;55;224;43;11
+Reprodução de software em qualquer suporte;27;85;429;121;758
+Coquerias;0;10;232;200;0
+Fabricação de produtos do refino de petróleo;667;5395;24141;3336;223
+Formulação de combustíveis;0;4;34;8;5
+Rerrefino de óleos lubrificantes;97;125;2119;272;0
+Fabricação de outros produtos derivados do petróleo, exceto produtos do refino;5;35;2122;329;2
+Fabricação de álcool;2597;23849;47808;9957;36162
+Fabricação de biocombustíveis, exceto álcool;253;305;435;1125;925
+Fabricação de cloro e álcalis;0;507;555;274;0
+Fabricação de intermediários para fertilizantes;0;4;1630;478;323
+Fabricação de adubos e fertilizantes (Desativado);241;3644;12380;9240;2815
+Fabricação de adubos e fertilizantes organominerais;0;0;0;0;0
+Fabricação de adubos e fertilizantes, exceto organominerais;0;0;0;0;0
+Fabricação de gases industriais;314;684;3576;605;156
+Elaboração de combustíveis nucleares;0;309;1055;0;2
+Fabricação de outros produtos químicos inorgânicos não especificados anteriormente;121;894;4529;658;112
+Fabricação de produtos petroquímicos básicos;25;1562;3164;866;129
+Fabricação de intermediários para plastificantes, resinas e fibras;9;617;725;281;1
+Fabricação de produtos químicos orgânicos não especificados anteriormente;28;1314;10441;1971;271
+Fabricação de resinas termoplásticas;342;1143;5291;1722;39
+Fabricação de resinas termofixas;3;97;1750;350;0
+Fabricação de elastômeros;0;147;637;196;5
+Fabricação de fibras artificiais e sintéticas;0;727;3501;391;73
+Fabricação de defensivos agrícolas;0;614;4946;995;106
+Fabricação de desinfestantes domissanitários;5;166;1773;469;133
+Fabricação de sabões e detergentes sintéticos;543;5260;13424;2207;1710
+Fabricação de produtos de limpeza e polimento;928;5261;11368;3115;797
+Fabricação de cosméticos, produtos de perfumaria e de higiene pessoal;638;2534;32709;5817;1398
+Fabricação de tintas, vernizes, esmaltes e lacas;530;3760;17441;5270;1529
+Fabricação de tintas de impressão;0;71;1249;277;0
+Fabricação de impermeabilizantes, solventes e produtos afins;93;598;2328;833;61
+Fabricação de adesivos e selantes;23;261;3328;2001;47
+Fabricação de pólvoras, explosivos e detonantes;333;207;2082;768;102
+Fabricação de artigos pirotécnicos;0;54;4011;32;0
+Fabricação de fósforos de segurança;0;0;88;1292;0
+Fabricação de aditivos de uso industrial;106;280;7207;1090;63
+Fabricação de catalisadores;0;0;545;22;0
+Fabricação de chapas, filmes, papéis e outros materiais e produtos químicos para fotografia;122;0;1066;12;5
+Fabricação de outros produtos químicos não especificados anteriormente;426;2720;31241;6969;1441
+Fabricação de produtos farmoquímicos;51;187;4025;555;576
+Fabricação de medicamentos alopáticos para uso humano;140;5088;58689;6207;12096
+Fabricação de medicamentos homeopáticos para uso humano;9;60;348;101;17
+Fabricação de medicamentos fitoterápicos para uso humano;28;38;374;498;9
+Fabricação de medicamentos para uso veterinário;8;222;7442;845;220
+Fabricação de preparações farmacêuticas;13;2;1267;253;20
+Fabricação de pneumáticos e de câmaras-de-ar;566;4320;19403;4445;38
+Reforma de pneumáticos usados;1180;2510;7401;4198;1875
+Fabricação de artefatos de borracha não especificados anteriormente;205;2950;40117;11144;573
+Fabricação de laminados planos e tubulares de material plástico;487;3028;10737;4212;467
+Fabricação de embalagens de material plástico;3113;14539;64309;32364;6049
+Fabricação de tubos e acessórios de material plástico para uso na construção;160;2112;5858;5531;563
+Fabricação de artefatos de material plástico para uso pessoal e doméstico;641;3892;25046;9527;271
+Fabricação de artefatos de material plástico para usos industriais;5054;2707;38674;17301;467
+Fabricação de artefatos de material plástico para uso na construção, exceto tubos e acessórios;423;2641;6784;6322;875
+Fabricação de artefatos de material plástico para outros usos não especificados anteriormente;2326;5670;51609;20872;1487
+Fabricação de vidro plano e de segurança;614;1754;12570;3226;1882
+Fabricação de embalagens de vidro;4;1088;6507;246;5
+Fabricação de artigos de vidro;93;2194;11739;3980;109
+Fabricação de cimento;1975;4678;7112;1764;1756
+Fabricação de estruturas pré-moldadas de concreto armado, em série e sob encomenda;2076;9545;15176;9621;4059
+Fabricação de artefatos de cimento para uso na construção;1813;6810;19202;11808;3800
+Fabricação de artefatos de fibrocimento para uso na construção;367;346;1810;1018;666
+Fabricação de casas pré-moldadas de concreto;11;16;150;236;47
+Preparação de massa de concreto e argamassa para construção;1148;1510;7797;3953;1060
+Fabricação de outros artefatos e produtos de concreto, cimento, fibrocimento, gesso e materiais semelhantes;1207;6555;11421;7763;2180
+Fabricação de produtos cerâmicos refratários;530;1832;6866;1056;741
+Fabricação de azulejos e pisos;158;4653;13080;10154;331
+Fabricação de artefatos de cerâmica e barro cozido para uso na construção, exceto azulejos e pisos;11381;36735;39818;18183;9372
+Fabricação de material sanitário de cerâmica;2;3009;6372;537;0
+Fabricação de produtos cerâmicos não-refratários não especificados anteriormente;399;2679;7176;4884;794
+Britamento de pedras, exceto associado à extração;160;737;1753;655;242
+Aparelhamento de pedras para construção, exceto associado à extração;49;503;4137;749;184
+Aparelhamento de placas e execução de trabalhos em mármore, granito, ardósia e outras pedras;735;4506;26855;6194;2348
+Fabricação de cal e gesso;63;3465;3598;1957;118
+Decoração, lapidação, gravação, vitrificação e outros trabalhos em cerâmica, louça, vidro e cristal;166;358;3189;645;103
+Fabricação de abrasivos;6;0;168;67;0
+Fabricação de outros produtos de minerais não-metálicos não especificados anteriormente;190;2717;14269;2055;562
+Produção de ferro-gusa;1112;1736;7609;19;656
+Produção de ferroligas;40;2018;5761;206;847
+Produção de semi-acabados de aço;4;180;3296;320;0
+Produção de laminados planos de aço ao carbono, revestidos ou não;30;235;31455;648;486
+Produção de laminados planos de aços especiais;0;0;3016;0;0
+Produção de tubos de aço sem costura;3;1;6551;28;1
+Produção de laminados longos de aço, exceto tubos;1279;1273;18335;3195;145
+Produção de arames de aço;4;691;4644;79;10
+Produção de relaminados, trefilados e perfilados de aço, exceto arames;124;1445;9566;1230;482
+Produção de tubos de aço com costura;61;3018;8087;2872;0
+Produção de outros tubos de ferro e aço;3;176;2944;717;10
+Produção de alumínio e suas ligas em formas primárias;3051;4315;10694;1914;228
+Produção de laminados de alumínio;12;214;5156;1569;56
+Metalurgia dos metais preciosos;0;14;829;100;39
+Metalurgia do cobre;146;922;4222;342;114
+Produção de zinco em formas primárias;0;21;1329;64;5
+Produção de laminados de zinco;1;23;39;15;1
+Produção de soldas e ânodos para galvanoplastia;32;44;509;42;12
+Metalurgia de outros metais não-ferrosos e suas ligas não especificados anteriormente;1435;573;10451;1853;284
+Fundição de ferro e aço;141;860;30892;22506;445
+Fundição de metais não-ferrosos e suas ligas;625;463;11173;5990;287
+Fabricação de estruturas metálicas;4039;8468;34302;17323;5322
+Fabricação de esquadrias de metal;798;8775;34198;18330;5201
+Fabricação de obras de caldeiraria pesada;220;1922;15990;1036;84
+Fabricação de tanques, reservatórios metálicos e caldeiras para aquecimento central;258;908;7050;2575;582
+Fabricação de caldeiras geradoras de vapor, exceto para aquecimento central e para veículos;1;221;2840;868;35
+Produção de forjados de aço;11;94;3472;2366;48
+Produção de forjados de metais não-ferrosos e suas ligas;9;96;1588;353;104
+Produção de artefatos estampados de metal;2430;5035;25579;9194;1114
+Metalurgia do pó;1;4;1555;399;7
+Serviços de usinagem, solda, tratamento e revestimento em metais (Desativado);0;0;0;0;0
+Serviços de usinagem, tornearia e solda;719;3947;23946;9915;807
+Serviços de tratamento e revestimento em metais;18;169;5556;1927;116
+Fabricação de artigos de cutelaria;1835;46;1065;5482;0
+Fabricação de artigos de serralheria, exceto esquadrias;411;3998;25972;7148;2092
+Fabricação de ferramentas;80;280;12551;10693;259
+Fabricação de equipamento bélico pesado, exceto veículos militares de combate;0;0;1663;51;9
+Fabricação de armas de fogo e munições;0;0;2444;2980;0
+Fabricação de embalagens metálicas;322;2213;13769;2279;783
+Fabricação de produtos de trefilados de metal padronizados;112;823;10525;4749;622
+Fabricação de produtos de trefilados de metal, exceto padronizados;34;403;10739;2751;318
+Fabricação de artigos de metal para uso doméstico e pessoal;236;2779;11460;9022;434
+Serviços de confecção de armações metálicas para a construção;183;600;4102;1696;476
+Serviços de corte e dobra de metais;20;105;157;116;1
+Fabricação de outros produtos de metal não especificados anteriormente;1227;3100;64490;30785;2600
+Fabricação de componentes eletrônicos;19080;618;18068;7452;108
+Fabricação de equipamentos de informática;2968;1740;12632;4959;114
+Fabricação de periféricos para equipamentos de informática;6031;709;17931;2656;91
+Fabricação de equipamentos transmissores de comunicação, peças e acessórios;1392;139;6758;2155;58
+Fabricação de aparelhos telefônicos e de outros equipamentos de comunicação, peças e acessórios;2167;60;10003;3026;22
+Fabricação de aparelhos de recepção, reprodução, gravação e amplificação de áudio e vídeo;11807;612;4610;2805;192
+Fabricação de aparelhos e equipamentos de medida, teste e controle;273;686;16188;8752;165
+Fabricação de cronômetros e relógios;2211;2;657;262;0
+Fabricação de aparelhos eletromédicos e eletroterapêuticos e equipamentos de irradiação;106;41;4685;655;85
+Fabricação de equipamentos e instrumentos ópticos, peças e acessórios;18;454;1039;97;2
+Fabricação de aparelhos fotográficos e cinematográficos, peças e acessórios;810;0;376;320;4
+Fabricação de mídias virgens, magnéticas e ópticas;0;23;93;74;0
+Fabricação de geradores de corrente contínua e alternada, peças e acessórios;133;1495;1242;1702;10
+Fabricação de transformadores, indutores, conversores, sincronizadores e semelhantes, peças e acessórios;404;200;13474;6010;694
+Fabricação de motores elétricos, peças e acessórios;949;216;5333;10283;31
+Fabricação de pilhas, baterias e acumuladores elétricos, exceto para veículos automotores;1264;446;920;31;1
+Fabricação de baterias e acumuladores para veículos automotores;4;1477;4863;2872;13
+Recondicionamento de baterias e acumuladores para veículos automotores;9;2;45;23;59
+Fabricação de aparelhos e equipamentos para distribuição e controle de energia elétrica;122;939;16208;9087;409
+Fabricação de material elétrico para instalações em circuito de consumo;562;123;6812;2933;86
+Fabricação de fios, cabos e condutores elétricos isolados;2119;748;19122;7060;410
+Fabricação de lâmpadas;0;22;1471;45;23
+Fabricação de luminárias e outros equipamentos de iluminação;69;799;8655;2594;73
+Fabricação de fogões, refrigeradores e máquinas de lavar e secar para uso doméstico, peças e acessórios;0;438;15769;17868;1706
+Fabricação de aparelhos elétricos de uso pessoal, peças e acessórios;2070;40;451;279;42
+Fabricação de outros aparelhos eletrodomésticos não especificados anteriormente, peças e acessórios;49;4327;11660;2486;62
+Fabricação de eletrodos, contatos e outros artigos de carvão e grafita para uso elétrico, eletroímãs e isoladores;21;233;2113;62;0
+Fabricação de equipamentos para sinalização e alarme;912;173;3343;875;311
+Fabricação de outros equipamentos e aparelhos elétricos não especificados anteriormente;372;1426;16882;6574;403
+Fabricação de motores e turbinas, peças e acessórios, exceto para aviões e veículos rodoviários;152;203;4934;1013;8
+Fabricação de equipamentos hidráulicos e pneumáticos, peças e acessórios, exceto válvulas;38;312;8318;2867;225
+Fabricação de válvulas, registros e dispositivos semelhantes, peças e acessórios;26;571;12930;4640;427
+Fabricação de compressores para uso industrial, peças e acessórios;0;0;1811;7869;1
+Fabricação de compressores para uso não-industrial, peças e acessórios;1;0;3253;5;0
+Fabricação de rolamentos para fins industriais;0;1;2057;248;0
+Fabricação de equipamentos de transmissão para fins industriais, exceto rolamentos;152;50;6915;1921;69
+Fabricação de fornos industriais, aparelhos e equipamentos não-elétricos para instalações térmicas, peças e acessórios;63;578;3525;817;34
+Fabricação de estufas e fornos elétricos para fins industriais, peças e acessórios;0;70;1267;307;5
+Fabricação de máquinas, equipamentos e aparelhos para transporte e elevação de pessoas, peças e acessórios;73;524;3220;2327;346
+Fabricação de máquinas, equipamentos e aparelhos para transporte e elevação de cargas, peças e acessórios;538;292;13113;7084;124
+Fabricação de máquinas e aparelhos de refrigeração e ventilação para uso industrial e comercial, peças e acessórios;501;1552;10134;9505;575
+Fabricação de aparelhos e equipamentos de ar condicionado para uso industrial;373;15;589;466;41
+Fabricação de aparelhos e equipamentos de ar condicionado para uso não-industrial;2235;24;1844;961;35
+Fabricação de máquinas e equipamentos para saneamento básico e ambiental, peças e acessórios;175;31;2264;980;44
+Fabricação de máquinas de escrever, calcular e outros equipamentos não-eletrônicos para escritório, peças e acessórios;50;12;203;267;1
+Fabricação de outras máquinas e equipamentos de uso geral não especificados anteriormente, peças e acessórios;1044;2228;46617;15915;880
+Fabricação de tratores agrícolas, peças e acessórios;44;4;2657;5431;22
+Fabricação de equipamentos para irrigação agrícola, peças e acessórios;2;374;1610;463;69
+Fabricação de máquinas e equipamentos para a agricultura e pecuária, peças e acessórios, exceto para irrigação;31;906;29508;39289;2546
+Fabricação de máquinas-ferramenta, peças e acessórios;61;411;13004;6134;314
+Fabricação de máquinas e equipamentos para a prospecção e extração de petróleo, peças e acessórios;0;283;5883;2075;0
+Fabricação de outras máquinas e equipamentos para uso na extração mineral, peças e acessórios, exceto na extração de petróleo;26;112;4035;445;87
+Fabricação de tratores, peças e acessórios, exceto agrícolas;120;0;7377;1152;9
+Fabricação de máquinas e equipamentos para terraplenagem, pavimentação e construção, peças e acessórios, exceto tratores;10;54;6139;1444;102
+Fabricação de máquinas para a indústria metalúrgica, peças e acessórios, exceto máquinas-ferramenta;2;328;4946;3570;42
+Fabricação de máquinas e equipamentos para as indústrias de alimentos, bebidas e fumo, peças e acessórios;18;589;10241;7757;568
+Fabricação de máquinas e equipamentos para a indústria têxtil, peças e acessórios;4;173;1265;1283;23
+Fabricação de máquinas e equipamentos para as indústrias do vestuário, do couro e de calçados, peças e acessórios;4;53;1129;2335;1
+Fabricação de máquinas e equipamentos para as indústrias de celulose, papel e papelão e artefatos, peças e acessórios;0;50;1710;1484;116
+Fabricação de máquinas e equipamentos para a indústria do plástico, peças e acessórios;0;64;1467;563;18
+Fabricação de máquinas e equipamentos para uso industrial específico não especificados anteriormente, peças e acessórios;527;2985;42060;15229;418
+Fabricação de automóveis, camionetas e utilitários;128;6011;69917;14614;4793
+Fabricação de chassis com motor para automóveis, camionetas e utilitários;0;0;802;0;33
+Fabricação de motores para automóveis, camionetas e utilitários;0;0;4552;840;0
+Fabricação de caminhões e ônibus;0;20;18456;7126;107
+Fabricação de motores para caminhões e ônibus;0;4;3623;0;0
+Fabricação de cabines, carrocerias e reboques para caminhões;627;2659;14374;17834;1072
+Fabricação de carrocerias para ônibus;0;15;7216;13338;0
+Fabricação de cabines, carrocerias e reboques para outros veículos automotores, exceto caminhões e ônibus;114;767;4762;1420;814
+Fabricação de peças e acessórios para o sistema motor de veículos automotores;599;336;33272;9405;35
+Fabricação de peças e acessórios para os sistemas de marcha e transmissão de veículos automotores;572;956;9151;4368;1
+Fabricação de peças e acessórios para o sistema de freios de veículos automotores;751;694;10486;5022;14
+Fabricação de peças e acessórios para o sistema de direção e suspensão de veículos automotores;0;364;15833;3525;30
+Fabricação de material elétrico e eletrônico para veículos automotores, exceto baterias;1516;1741;25368;7455;40
+Fabricação de bancos e estofados para veículos automotores;9;532;7670;2077;34
+Fabricação de outras peças e acessórios para veículos automotores não especificadas anteriormente;1421;3091;150690;28838;268
+Recondicionamento e recuperação de motores para veículos automotores;619;1413;4990;2059;1081
+Construção de embarcações de grande porte;607;11309;23739;10982;1
+Construção de embarcações para uso comercial e para usos especiais, exceto de grande porte;1946;785;2616;867;40
+Construção de embarcações para esporte e lazer;205;384;1582;1708;150
+Fabricação de locomotivas, vagões e outros materiais rodantes;2;276;4753;20;0
+Fabricação de peças e acessórios para veículos ferroviários;0;43;1717;115;0
+Fabricação de aeronaves;0;77;17668;41;16
+Fabricação de turbinas, motores e outros componentes e peças para aeronaves;0;0;2744;5;5
+Fabricação de veículos militares de combate;0;0;0;0;0
+Fabricação de motocicletas, peças e acessórios(Desativado);0;0;0;0;0
+Fabricação de motocicletas;11302;42;546;783;0
+Fabricação de peças e acessórios para motocicletas;1520;145;597;997;0
+Fabricação de bicicletas e triciclos não-motorizados, peças e acessórios;1310;1364;4246;1860;89
+Fabricação de equipamentos de transporte não especificados anteriormente;1680;157;2645;1274;105
+Fabricação de móveis com predominância de madeira;2754;16940;85815;92639;9060
+Fabricação de móveis com predominância de metal;340;4736;20618;11872;1954
+Fabricação de móveis de outros materiais, exceto madeira e metal;336;2366;3595;3881;498
+Fabricação de colchões;1774;5866;10725;6220;2330
+Lapidação de gemas;46;24;429;567;5
+Fabricação de artefatos de joalheria e ourivesaria;344;640;7369;3350;307
+Cunhagem de moedas e medalhas;0;0;50;71;0
+Fabricação de bijuterias e artefatos semelhantes;10;729;6285;914;457
+Fabricação de instrumentos musicais, peças e acessórios;0;50;1678;275;11
+Fabricação de artefatos para pesca e esporte;118;238;2300;1372;197
+Fabricação de jogos eletrônicos;21;8;152;14;0
+Fabricação de mesas de bilhar, de sinuca e acessórios não associada à locação;53;18;49;8;3
+Fabricação de mesas de bilhar, de sinuca e acessórios associada à locação;58;79;156;320;128
+Fabricação de outros brinquedos e jogos recreativos não especificados anteriormente;594;281;11283;1705;416
+Fabricação de instrumentos não-eletrônicos e utensílios para uso médico, cirúrgico, odontológico e de laboratório;241;258;8604;2665;135
+Fabricação de mobiliário para uso médico, cirúrgico, odontológico e de laboratório;6;4;883;182;92
+Fabricação de aparelhos e utensílios para correção de defeitos físicos e aparelhos ortopédicos em geral sob encomenda;9;297;1547;726;83
+Fabricação de aparelhos e utensílios para correção de defeitos físicos e aparelhos ortopédicos em geral, exceto sob encomenda;3;30;2033;363;27
+Fabricação de materiais para medicina e odontologia;123;771;14835;3964;803
+Serviços de prótese dentária;219;984;4731;1501;680
+Fabricação de artigos ópticos;717;768;6006;1079;425
+Fabricação de artefatos de tecido não tecido para uso odonto-médico-hospitalar;0;0;0;0;0
+Serviço de laboratório óptico;8;71;3;0;0
+Fabricação de escovas, pincéis e vassouras;98;512;3054;3967;146
+Fabricação de roupas de proteção e segurança e resistentes a fogo;0;61;149;82;0
+Fabricação de equipamentos e acessórios para segurança pessoal e profissional;484;782;8759;3282;176
+Fabricação de guarda-chuvas e similares;0;3;217;51;0
+Fabricação de canetas, lápis e outros artigos para escritório;203;57;3246;534;53
+Fabricação de letras, letreiros e placas de qualquer material, exceto luminosos;286;1024;2494;2244;580
+Fabricação de painéis e letreiros luminosos;152;502;2083;1482;375
+Fabricação de aviamentos para costura;1;1134;1823;1714;28
+Fabricação de velas, inclusive decorativas;0;181;73;1;1
+Fabricação de produtos diversos não especificados anteriormente;274;1205;10431;3075;781
+Manutenção e reparação de tanques, reservatórios metálicos e caldeiras, exceto para veículos;438;1375;3837;877;380
+Manutenção e reparação de equipamentos transmissores de comunicação;0;0;0;0;0
+Manutenção e reparação de aparelhos e instrumentos de medida, teste e controle;382;854;3180;1720;256
+Manutenção e reparação de aparelhos eletromédicos e eletroterapêuticos e equipamentos de irradiação;56;494;778;217;142
+Manutenção e reparação de equipamentos e instrumentos ópticos;9;59;141;11;19
+Manutenção e reparação de geradores, transformadores e motores elétricos;261;1458;5035;977;504
+Manutenção e reparação de baterias e acumuladores elétricos, exceto para veículos;1;7;102;19;6
+Manutenção e reparação de máquinas, aparelhos e materiais elétricos não especificados anteriormente;111;955;3866;561;165
+Manutenção e reparação de máquinas motrizes não-elétricas;192;307;1402;652;18
+Manutenção e reparação de equipamentos hidráulicos e pneumáticos, exceto válvulas;210;359;1828;269;240
+Manutenção e reparação de válvulas industriais;58;201;847;203;0
+Manutenção e reparação de compressores;23;110;486;180;30
+Manutenção e reparação de equipamentos de transmissão para fins industriais;34;233;547;248;62
+Manutenção e reparação de máquinas, aparelhos e equipamentos para instalações térmicas;63;75;534;61;82
+Manutenção e reparação de máquinas e aparelhos de refrigeração e ventilação para uso industrial e comercial;425;1300;4810;1034;490
+Manutenção e reparação de máquinas, equipamentos e aparelhos para transporte e elevação de cargas;121;731;2480;825;291
+Manutenção e reparação de máquinas de escrever, calcular e de outros equipamentos não-eletrônicos para escritório;16;291;902;266;130
+Manutenção e reparação de máquinas e equipamentos para uso geral não especificados anteriormente;261;3249;11192;3727;509
+Manutenção e reparação de máquinas e equipamentos para agricultura e pecuária;132;227;1406;1034;952
+Manutenção e reparação de tratores agrícolas;224;145;555;275;221
+Manutenção e reparação de máquinas-ferramenta;186;219;1922;358;265
+Manutenção e reparação de máquinas e equipamentos para a prospecção e extração de petróleo;0;499;3092;31;0
+Manutenção e reparação de máquinas e equipamentos para uso na extração mineral, exceto na extração de petróleo;84;107;358;13;129
+Manutenção e reparação de tratores, exceto agrícolas;45;50;139;95;20
+Manutenção e reparação de máquinas e equipamentos de terraplenagem, pavimentação e construção, exceto tratores;56;69;410;229;25
+Manutenção e reparação de máquinas para a indústria metalúrgica, exceto máquinas-ferramenta;20;183;3437;490;65
+Manutenção e reparação de máquinas e equipamentos para as indústrias de alimentos, bebidas e fumo;0;127;669;607;89
+Manutenção e reparação de máquinas e equipamentos para a indústria têxtil, do vestuário, do couro e calçados;0;161;201;174;7
+Manutenção e reparação de máquinas e aparelhos para a indústria de celulose, papel e papelão e artefatos;0;0;940;702;1
+Manutenção e reparação de máquinas e aparelhos para a indústria do plástico;95;132;255;139;552
+Manutenção e reparação de outras máquinas e equipamentos para usos industriais não especificados anteriormente;44;1357;13697;1748;614
+Manutenção e reparação de veículos ferroviários;3;240;1587;356;2
+Manutenção e reparação de aeronaves, exceto a manutenção na pista;24;57;4403;1484;543
+Manutenção de aeronaves na pista;8;3;358;56;9
+Manutenção e reparação de embarcações e estruturas flutuantes;701;738;7858;852;18
+Manutenção e reparação de embarcações para esporte e lazer;8;41;723;145;37
+Manutenção e reparação de equipamentos e produtos não especificados anteriormente;303;667;3468;1362;384
+Instalação de máquinas e equipamentos industriais;1131;1720;18608;4663;1113
+Serviços de montagem de móveis de qualquer material;365;1964;6051;1867;1008
+Instalação de outros equipamentos não especificados anteriormente;21;993;1767;538;122
+Geração de energia elétrica (Desativado);0;0;0;0;0
+Geração de energia elétrica;3675;6634;12881;7043;2135
+Atividades de coordenação e controle da operação da geração e transmissão de energia elétrica;0;13;55;0;8
+Transmissão de energia elétrica;1595;1846;3402;2617;1953
+Comércio atacadista de energia elétrica;6;90;1041;140;40
+Distribuição de energia elétrica;6899;12737;32226;18902;6253
+Produção de gás, processamento de gás natural;1;732;1903;275;69
+Distribuição de combustíveis gasosos por redes urbanas;106;101;440;200;28
+Produção e distribuição de vapor, água quente e ar condicionado;3;729;268;11;5
+Captação, tratamento e distribuição de água;6643;25621;63899;22177;10838
+Distribuição de água por caminhões;35;460;976;16;76
+Gestão de redes de esgoto;11;747;2165;473;14
+Atividades relacionadas a esgoto, exceto a gestão de redes;1704;3171;10961;2142;1831
+Coleta de resíduos não-perigosos;4259;30412;64654;19218;7125
+Coleta de resíduos perigosos;199;663;2015;1664;245
+Tratamento e disposição de resíduos não-perigosos;123;727;25824;814;233
+Tratamento e disposição de resíduos perigosos;344;886;2552;751;166
+Recuperação de sucatas de alumínio;71;276;845;378;405
+Recuperação de materiais metálicos, exceto alumínio;507;523;5462;1603;552
+Recuperação de materiais plásticos;271;1583;4050;3138;598
+Usinas de compostagem;0;84;354;267;15
+Recuperação de materiais não especificados anteriormente;578;1810;4677;2671;3294
+Descontaminação e outros serviços de gestão de resíduos;426;61;837;292;5
+Incorporação de empreendimentos imobiliários;11762;50681;78883;35259;25011
+Construção de edifícios;73605;343512;455711;176706;100522
+Construção de rodovias e ferrovias;17909;35010;107357;27715;23132
+Pintura para sinalização em pistas rodoviárias e aeroportos;126;445;3105;1058;205
+Construção de obras-de-arte especiais;5879;23356;50809;7654;8067
+Obras de urbanização - ruas, praças e calçadas;803;7349;30781;6339;3284
+Construção de barragens e represas para geração de energia elétrica;38829;1388;2171;2444;648
+Construção de estações e redes de distribuição de energia elétrica;5538;14591;21119;8012;8410
+Manutenção de redes de distribuição de energia elétrica;1092;1560;6708;1491;1796
+Construção de estações e redes de telecomunicações;3079;8533;24570;7712;5702
+Manutenção de estações e redes de telecomunicações;192;1326;13901;533;382
+Construção de redes de abastecimento de água, coleta de esgoto e construções correlatas, exceto obras de irrigação;342;6375;15291;4596;3629
+Obras de irrigação;22;809;904;15;43
+Construção de redes de transportes por dutos, exceto para água e esgoto;57;853;3172;209;222
+Obras portuárias, marítimas e fluviais;90;6020;4244;394;25
+Montagem de estruturas metálicas;3417;10463;30028;7696;2397
+Obras de montagem industrial;8360;11829;64285;7964;1179
+Construção de instalações esportivas e recreativas;180;6098;4499;1240;2017
+Outras obras de engenharia civil não especificadas anteriormente;6075;54719;110733;11420;21251
+Demolição de edifícios e outras estruturas;74;536;3349;304;88
+Preparação de canteiro e limpeza de terreno;103;304;1009;869;106
+Perfurações e sondagens;1170;1210;6656;623;256
+Obras de terraplenagem;9290;12238;36203;13169;8749
+Serviços de preparação do terreno não especificados anteriormente;162;932;3816;1156;1341
+Instalação e manutenção elétrica;7833;26403;83023;21890;8826
+Instalações hidráulicas, sanitárias e de gás;299;3254;18375;4837;1242
+Instalação e manutenção de sistemas centrais de ar condicionado, de ventilação e refrigeração;2314;7235;28327;4485;2582
+Instalações de sistema de prevenção contra incêndio;359;284;4253;463;121
+Instalação de painéis publicitários;97;580;1981;504;341
+Instalação de equipamentos para orientação à navegação marítima, fluvial e lacustre;0;1;100;4;10
+Instalação, manutenção e reparação de elevadores, escadas e esteiras rolantes, exceto de fabricação própria;178;1507;8518;1554;866
+Montagem e instalação de sistemas e equipamentos de iluminação e sinalização em vias públicas, portos e aeroportos;156;1498;3129;682;884
+Tratamentos térmicos, acústicos ou de vibração;25;595;2143;360;76
+Outras obras de instalações em construções não especificadas anteriormente;1411;4867;27696;3372;1893
+Impermeabilização em obras de engenharia civil;207;1666;7664;1412;651
+Instalação de portas, janelas, tetos, divisórias e armários embutidos de qualquer material;591;2069;9253;1808;1026
+Obras de acabamento em gesso e estuque;667;3196;8854;2069;1381
+Serviços de pintura de edifícios em geral;771;6172;28682;10703;4025
+Aplicação de revestimentos e de resinas em interiores e exteriores;327;1351;7532;1704;1021
+Outras obras de acabamento da construção;1305;6653;52141;10078;4864
+Obras de fundações;1297;4629;23177;4565;2223
+Administração de obras;446;3231;11883;1547;1610
+Montagem e desmontagem de andaimes e outras estruturas temporárias;993;2230;6275;922;407
+Obras de alvenaria;6343;6251;38257;18788;5623
+Serviços de operação e fornecimento de equipamentos para transporte e elevação de cargas e pessoas para uso em obras;854;3078;8226;1110;819
+Perfuração e construção de poços de água;280;1828;1690;793;457
+Serviços especializados para construção não especificados anteriormente;511;10901;28031;9786;3179
+Comércio a varejo de automóveis, camionetas e utilitários novos;11564;37472;98278;43899;23885
+Comércio a varejo de automóveis, camionetas e utilitários usados;1082;4650;15886;7234;2004
+Comércio por atacado de automóveis, camionetas e utilitários novos e usados;900;2937;9141;1740;338
+Comércio por atacado de caminhões novos e usados;1472;3306;10014;6829;2404
+Comércio por atacado de reboques e semi-reboques novos e usados;10;35;194;501;46
+Comércio por atacado de ônibus e microônibus novos e usados;25;15;620;57;17
+Representantes comerciais e agentes do comércio de veículos automotores;175;938;3209;1055;498
+Comércio sob consignação de veículos automotores;179;360;535;282;385
+Serviços de manutenção e reparação mecânica de veículos automotores;4965;14273;60200;31250;13186
+Serviços de lanternagem ou funilaria e pintura de veículos automotores;411;3036;8789;3715;1877
+Serviços de manutenção e reparação elétrica de veículos automotores;146;1379;2161;1841;520
+Serviços de alinhamento e balanceamento de veículos automotores;287;546;1904;756;690
+Serviços de lavagem, lubrificação e polimento de veículos automotores;1138;4428;12665;5149;2587
+Serviços de borracharia para veículos automotores;299;825;2821;1983;992
+Serviços de instalação, manutenção e reparação de acessórios para veículos automotores;505;1982;7583;2953;1268
+Serviços de capotaria;2;25;32;17;0
+Comércio por atacado de peças e acessórios novos para veículos automotores;3761;9548;38999;14409;8500
+Comércio por atacado de pneumáticos e câmaras-de-ar;428;1280;3292;1548;541
+Comércio a varejo de peças e acessórios novos para veículos automotores;16107;45754;148661;61437;36012
+Comércio a varejo de peças e acessórios usados para veículos automotores;435;1494;5123;2660;1180
+Comércio a varejo de pneumáticos e câmaras-de-ar;2337;5851;20573;8461;4994
+Representantes comerciais e agentes do comércio de peças e acessórios novos e usados para veículos automotores;88;194;462;351;165
+Comércio por atacado de motocicletas e motonetas;416;719;657;126;210
+Comércio por atacado de peças e acessórios para motocicletas e motonetas;549;1064;1715;807;853
+Comércio a varejo de motocicletas e motonetas novas;6060;14678;13464;4370;4139
+Comércio a varejo de motocicletas e motonetas usadas;620;1245;982;570;600
+Comércio a varejo de peças e acessórios para motocicletas e motonetas (Desativado);2777;8914;10851;4562;3897
+Comércio a varejo de peças e acessórios novos para motocicletas e motonetas;0;0;0;0;0
+Comércio a varejo de peças e acessórios usados para motocicletas e motonetas;0;0;0;0;0
+Representantes comerciais e agentes do comércio de motocicletas e motonetas, peças e acessórios;21;70;93;21;105
+Comércio sob consignação de motocicletas e motonetas;18;52;36;17;13
+Manutenção e reparação de motocicletas e motonetas;361;800;1988;995;557
+Representantes comerciais e agentes do comércio de matérias-primas agrícolas e animais vivos;114;234;1016;2026;317
+Representantes comerciais e agentes do comércio de combustíveis, minerais, produtos siderúrgicos e químicos;117;144;1388;395;192
+Representantes comerciais e agentes do comércio de madeira, material de construção e ferragens;202;806;1514;650;299
+Representantes comerciais e agentes do comércio de máquinas, equipamentos, embarcações e aeronaves;116;526;2381;792;354
+Representantes comerciais e agentes do comércio de eletrodomésticos, móveis e artigos de uso doméstico;259;381;907;323;96
+Representantes comerciais e agentes do comércio de têxteis, vestuário, calçados e artigos de viagem;156;791;1555;945;169
+Representantes comerciais e agentes do comércio de produtos alimentícios, bebidas e fumo;412;2544;3418;1295;462
+Representantes comerciais e agentes do comércio de medicamentos, cosméticos e produtos de perfumaria;61;166;293;102;82
+Representantes comerciais e agentes do comércio de instrumentos e materiais odonto-médico-hospitalares;53;96;392;36;117
+Representantes comerciais e agentes do comércio de jornais, revistas e outras publicações;29;17;684;99;30
+Outros representantes comerciais e agentes do comércio especializado em produtos não especificados anteriormente;211;925;3367;1451;382
+Representantes comerciais e agentes do comércio de mercadorias em geral não especializado;808;5251;7914;3701;652
+Comércio atacadista de café em grão;134;142;5789;101;8
+Comércio atacadista de soja;400;322;846;7318;2392
+Comércio atacadista de animais vivos;605;159;635;587;275
+Comércio atacadista de couros, lãs, peles e outros subprodutos não-comestíveis de origem animal;318;251;764;807;622
+Comércio atacadista de algodão;3;357;186;2;248
+Comércio atacadista de fumo em folha não beneficiado;0;5;2;844;0
+Comércio atacadista de cacau;28;451;9;0;0
+Comércio atacadista de sementes, flores, plantas e gramas;174;494;4744;2259;837
+Comércio atacadista de sisal;0;10;7;1;0
+Comércio atacadista de matérias-primas agrícolas com atividade de fracionamento e acondicionamento associada;308;192;714;1489;263
+Comércio atacadista de alimentos para animais;613;1600;7377;1951;1119
+Comércio atacadista de matérias-primas agrícolas não especificadas anteriormente;255;487;3141;14943;3145
+Comércio atacadista de leite e laticínios;758;3897;10609;3442;897
+Comércio atacadista de cereais e leguminosas beneficiados;766;4759;4911;9096;1749
+Comércio atacadista de farinhas, amidos e féculas;252;1107;1700;1017;218
+Comércio atacadista de cereais e leguminosas beneficiados, farinhas, amidos e féculas, com atividade de fracionamento e acondicionamento associada;395;2380;1833;972;409
+Comércio atacadista de frutas, verduras, raízes, tubérculos, hortaliças e legumes frescos;1546;7275;38194;10240;4289
+Comércio atacadista de aves vivas e ovos;517;957;1134;468;1301
+Comércio atacadista de coelhos e outros pequenos animais vivos para alimentação;0;0;0;0;0
+Comércio atacadista de carnes bovinas e suínas e derivados;2023;5139;14559;7486;3435
+Comércio atacadista de aves abatidas e derivados;560;861;1433;986;440
+Comércio atacadista de pescados e frutos do mar;499;1681;4111;1742;310
+Comércio atacadista de carnes e derivados de outros animais;21;535;366;117;11
+Comércio atacadista de água mineral;459;1130;2914;546;296
+Comércio atacadista de cerveja, chope e refrigerante;5816;19606;41401;11495;6733
+Comércio atacadista de bebidas com atividade de fracionamento e acondicionamento associada;107;961;1270;331;1309
+Comércio atacadista de bebidas não especificadas anteriormente;995;3281;8127;2342;667
+Comércio atacadista de fumo beneficiado;25;938;111;250;64
+Comércio atacadista de cigarros, cigarrilhas e charutos;90;976;1849;838;152
+Comércio atacadista de café torrado, moído e solúvel;149;614;1417;263;299
+Comércio atacadista de açúcar;319;432;515;219;156
+Comércio atacadista de óleos e gorduras;21;71;632;94;17
+Comércio atacadista de pães, bolos, biscoitos e similares;328;1799;6363;1473;1132
+Comércio atacadista de massas alimentícias;1700;1302;1677;1091;255
+Comércio atacadista de sorvetes;200;1040;2493;881;690
+Comércio atacadista de chocolates, confeitos, balas, bombons e semelhantes;737;1018;2805;1552;343
+Comércio atacadista especializado em outros produtos alimentícios não especificados anteriormente;1683;2950;9934;4197;768
+Comércio atacadista de produtos alimentícios em geral;12308;27136;64492;16247;9891
+Comércio atacadista de produtos alimentícios em geral, com atividade de fracionamento e acondicionamento associada;976;3811;4534;1035;2729
+Comércio atacadista de tecidos;37;2796;7266;1452;885
+Comércio atacadista de artigos de cama, mesa e banho;266;360;1055;517;146
+Comércio atacadista de artigos de armarinho;466;2482;4652;1343;548
+Comércio atacadista de artigos do vestuário e acessórios, exceto profissionais e de segurança;964;5162;17853;8746;2608
+Comércio atacadista de roupas e acessórios para uso profissional e de segurança do trabalho;379;370;3564;882;294
+Comércio atacadista de calçados;271;1495;3073;634;269
+Comércio atacadista de bolsas, malas e artigos de viagem;14;141;1797;299;142
+Comércio atacadista de medicamentos e drogas de uso humano;5176;11612;28644;8136;5658
+Comércio atacadista de medicamentos e drogas de uso veterinário;167;591;2082;1090;271
+Comércio atacadista de instrumentos e materiais para uso médico, cirúrgico, hospitalar e de laboratórios;1060;4431;19260;3980;1857
+Comércio atacadista de próteses e artigos de ortopedia;51;269;1842;234;116
+Comércio atacadista de produtos odontológicos;177;451;2899;1501;406
+Comércio atacadista de cosméticos e produtos de perfumaria;1895;5386;27992;4039;1480
+Comércio atacadista de produtos de higiene pessoal;368;2150;7168;569;1877
+Comércio atacadista de artigos de escritório e de papelaria;491;4231;13926;2251;958
+Comércio atacadista de livros, jornais e outras publicações;175;1649;6582;994;315
+Comércio atacadista de equipamentos elétricos de uso pessoal e doméstico;340;977;4168;1010;271
+Comércio atacadista de aparelhos eletrônicos de uso pessoal e doméstico;448;1132;5022;1477;595
+Comércio atacadista de bicicletas, triciclos e outros veículos recreativos;794;806;876;320;235
+Comércio atacadista de móveis e artigos de colchoaria;426;1978;2443;1117;342
+Comércio atacadista de artigos de tapeçaria, persianas e cortinas;10;69;1724;482;241
+Comércio atacadista de lustres, luminárias e abajures;5;59;1427;996;10
+Comércio atacadista de filmes, CDs, DVDs, fitas e discos;21;128;813;134;13
+Comércio atacadista de produtos de higiene, limpeza e conservação domiciliar;1319;3531;11789;2713;1303
+Comércio atacadista de produtos de higiene, limpeza e conservação domiciliar, com atividade de fracionamento e acondicionamento associada;239;125;741;513;200
+Comércio atacadista de jóias, relógios e bijuterias, inclusive pedras preciosas e semipreciosas lapidadas;80;486;5613;802;189
+Comércio atacadista de outros equipamentos e artigos de uso pessoal e doméstico não especificados anteriormente;442;2888;18741;4622;829
+Comércio atacadista de equipamentos de informática;254;1135;18407;2661;815
+Comércio atacadista de suprimentos para informática;31;261;2082;343;84
+Comércio atacadista de componentes eletrônicos e equipamentos de telefonia e comunicação;123;704;8173;1697;465
+Comércio atacadista de máquinas, aparelhos e equipamentos para uso agropecuário, partes e peças;1027;2102;8990;6841;6713
+Comércio atacadista de máquinas, equipamentos para terraplenagem, mineração e construção, partes e peças;1540;1586;5690;950;1170
+Comércio atacadista de máquinas e equipamentos para uso industrial, partes e peças;444;1922;27300;6759;871
+Comércio atacadista de máquinas, aparelhos e equipamentos para uso odonto-médico-hospitalar, partes e peças;743;691;7180;1189;249
+Comércio atacadista de máquinas e equipamentos para uso comercial, partes e peças;276;814;4785;1932;962
+Comércio atacadista de bombas e compressores, partes e peças;57;293;1407;324;271
+Comércio atacadista de outras máquinas e equipamentos não especificados anteriormente, partes e peças;983;1583;18543;3459;1966
+Comércio atacadista de madeira e produtos derivados;1695;2463;6308;5425;1175
+Comércio atacadista de ferragens e ferramentas;942;4568;18113;4939;1548
+Comércio atacadista de material elétrico;469;1864;9672;2561;694
+Comércio atacadista de cimento;521;1196;2231;271;165
+Comércio atacadista de tintas, vernizes e similares;103;242;2733;832;242
+Comércio atacadista de mármores e granitos;153;540;3192;831;302
+Comércio atacadista de vidros, espelhos e vitrais;213;752;2775;1126;201
+Comércio atacadista especializado de materiais de construção não especificados anteriormente;325;894;4513;1345;384
+Comércio atacadista de materiais de construção em geral;1939;6316;10857;3384;3349
+Comércio atacadista de álcool carburante, biodiesel, gasolina e demais derivados de petróleo, exceto lubrificantes, não realizado por transportador re;818;4149;7686;2561;1284
+Comércio atacadista de combustíveis realizado por transportador retalhista (TRR);221;421;2787;1670;1068
+Comércio atacadista de combustíveis de origem vegetal, exceto álcool carburante;39;38;752;401;73
+Comércio atacadista de combustíveis de origem mineral em bruto;11;72;73;54;20
+Comércio atacadista de lubrificantes;454;1446;3101;1302;709
+Comércio atacadista de gás liqüefeito de petróleo (GLP);1775;1283;7958;2438;1185
+Comércio atacadista de defensivos agrícolas, adubos, fertilizantes e corretivos do solo;857;2600;8180;8422;4421
+Comércio atacadista de resinas e elastômeros;2;80;891;327;11
+Comércio atacadista de solventes;0;0;86;35;6
+Comércio atacadista de outros produtos químicos e petroquímicos não especificados anteriormente;280;1344;7669;3207;304
+Comércio atacadista de produtos siderúrgicos e metalúrgicos, exceto para construção;9;467;11504;3181;103
+Comércio atacadista de papel e papelão em bruto;74;226;1919;445;109
+Comércio atacadista de embalagens;342;1225;10089;3286;1306
+Comércio atacadista de resíduos de papel e papelão;164;1160;8276;2505;981
+Comércio atacadista de resíduos e sucatas não-metálicos, exceto de papel e papelão;247;498;4547;1379;298
+Comércio atacadista de resíduos e sucatas metálicos;544;2374;16111;3695;938
+Comércio atacadista de produtos da extração mineral, exceto combustíveis;79;2894;2776;815;56
+Comércio atacadista de fios e fibras têxteis beneficiados;47;207;1185;482;13
+Comércio atacadista especializado em outros produtos intermediários não especificados anteriormente;826;4071;31334;11087;1863
+Comércio atacadista de mercadorias em geral, com predominância de produtos alimentícios;3917;8710;19805;4213;3345
+Comércio atacadista de mercadorias em geral, com predominância de insumos agropecuários;495;653;2921;3440;1769
+Comércio atacadista de mercadorias em geral, sem predominância de alimentos ou de insumos agropecuários;3901;25942;49009;9836;4705
+Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - hipermercados;13512;34271;83970;47619;15962
+Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - supermercados;47126;130806;534780;197813;80427
+Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - minimercados, mercearias e armazéns;23991;97305;164676;63371;24550
+Lojas de departamentos ou magazines (Desativado);8130;27196;46734;19428;2896
+Lojas de variedades, exceto lojas de departamentos ou magazines;1100;4789;16276;5014;1622
+Lojas duty free de aeroportos internacionais (Desativado);30;121;1680;88;46
+Lojas de departamentos ou magazines, exceto lojas francas (Duty free);0;0;0;0;0
+Lojas francas (Duty Free) de aeroportos, portos e em fronteiras terrestres;0;0;0;0;0
+Padaria e confeitaria com predominância de produção própria (Desativado);0;0;0;0;0
+Padaria e confeitaria com predominância de revenda;7919;28118;150319;38723;17458
+Comércio varejista de laticínios e frios;1255;4537;9813;2245;1600
+Comércio varejista de doces, balas, bombons e semelhantes;1514;7331;27607;5236;2578
+Comércio varejista de carnes - açougues;3045;10870;43693;8173;5099
+Peixaria;437;1282;3590;1080;390
+Comércio varejista de bebidas;3191;10876;25977;9271;5807
+Comércio varejista de hortifrutigranjeiros;1197;8702;35884;6188;3725
+Tabacaria;125;469;1489;722;232
+Comércio varejista de mercadorias em lojas de conveniência;108;675;275;144;127
+Comércio varejista de produtos alimentícios em geral ou especializado em produtos alimentícios não especificados anteriormente;6607;19030;62616;23448;14549
+Comércio varejista de combustíveis para veículos automotores;23834;61189;152328;70983;34723
+Comércio varejista de lubrificantes;716;2360;5041;1780;1199
+Comércio varejista de tintas e materiais para pintura;1971;4331;20551;8332;2982
+Comércio varejista de material elétrico;2548;6583;31723;14300;5199
+Comércio varejista de vidros;2268;6677;22006;9633;3845
+Comércio varejista de ferragens e ferramentas;7706;16365;61381;23556;10379
+Comércio varejista de madeira e artefatos;1992;9942;31333;11196;4539
+Comércio varejista de materiais hidráulicos;363;1496;7222;1572;814
+Comércio varejista de cal, areia, pedra britada, tijolos e telhas;547;1585;5281;2327;1030
+Comércio varejista de materiais de construção não especificados anteriormente;6156;29907;115417;38436;19244
+Comércio varejista de pedras para revestimento;25;205;232;70;28
+Comércio varejista de materiais de construção em geral;20410;60823;111475;48807;23974
+Comércio varejista especializado de equipamentos e suprimentos de informática (Desativado);0;0;0;0;0
+Comércio varejista especializado de equipamentos e suprimentos de informática;4530;14309;53188;16304;6985
+Recarga de cartuchos para equipamentos de informática;77;424;1037;340;146
+Comércio varejista especializado de equipamentos de telefonia e comunicação;3866;14197;43605;13948;6911
+Comércio varejista especializado de eletrodomésticos e equipamentos de áudio e vídeo;12749;41377;126098;34355;24321
+Comércio varejista de móveis;23612;61979;91472;50875;18540
+Comércio varejista de artigos de colchoaria;471;3242;7721;1969;1223
+Comércio varejista de artigos de iluminação;177;847;6177;1542;591
+Comércio varejista de tecidos;4293;11358;18367;5394;4083
+Comercio varejista de artigos de armarinho;5054;19696;22992;7390;3304
+Comercio varejista de artigos de cama, mesa e banho;1596;7541;21571;5668;2889
+Comércio varejista especializado de instrumentos musicais e acessórios;410;1170;3692;1117;628
+Comércio varejista especializado de peças e acessórios para aparelhos eletroeletrônicos para uso doméstico, exceto informática e comunicação;1322;4952;14346;6743;2589
+Comércio varejista de artigos de tapeçaria, cortinas e persianas;516;1442;8425;2985;1441
+Comércio varejista de outros artigos de uso doméstico não especificados anteriormente;1977;9812;30685;14755;5056
+Comércio varejista de livros;1693;7028;27360;6258;3265
+Comércio varejista de jornais e revistas;284;1252;4237;2149;735
+Comércio varejista de artigos de papelaria;4128;11098;41359;13158;5930
+Comércio varejista de discos, CDs, DVDs e fitas;194;637;2492;777;273
+Comércio varejista de brinquedos e artigos recreativos;1179;5009;14421;5775;2181
+Comércio varejista de artigos esportivos;1206;4473;19124;5537;2297
+Comércio varejista de bicicletas e triciclos, peças e acessórios;1104;3885;6413;2036;1287
+Comércio varejista de artigos de caça, pesca e camping;498;486;2384;971;599
+Comércio varejista de embarcações e outros veículos recreativos, peças e acessórios;323;244;1451;520;232
+Comércio varejista de produtos farmacêuticos, sem manipulação de fórmulas;19250;66254;165988;59670;28708
+Comércio varejista de produtos farmacêuticos, com manipulação de fórmulas;1574;4943;34125;9746;3684
+Comércio varejista de produtos farmacêuticos homeopáticos;1079;1293;2484;899;707
+Comércio varejista de medicamentos veterinários;2940;4155;8659;5299;4736
+Comércio varejista de cosméticos, produtos de perfumaria e de higiene pessoal;5508;22423;55030;13164;8482
+Comércio varejista de artigos médicos e ortopédicos;819;4244;11226;3784;2535
+Comércio varejista de artigos de óptica;4247;18768;29911;8411;4900
+Comércio varejista de artigos do vestuário e acessórios;41301;116996;397876;135679;55070
+Comércio varejista de calçados;9009;42751;106324;35022;16380
+Comércio varejista de artigos de viagem;851;3782;10071;2478;1459
+Comércio varejista de artigos de joalheria;1465;4248;17562;7627;2154
+Comércio varejista de artigos de relojoaria;266;1046;3007;1577;388
+Comércio varejista de gás liqüefeito de petróleo (GLP);2991;15300;22239;7105;4081
+Comércio varejista de antigüidades;28;75;466;115;48
+Comércio varejista de outros artigos usados;235;717;3836;1147;425
+Comércio varejista de suvenires, bijuterias e artesanatos;2511;12965;29391;10332;3568
+Comércio varejista de plantas e flores naturais;761;3613;18409;6839;2530
+Comércio varejista de objetos de arte;94;375;1498;307;135
+Comércio varejista de animais vivos e de artigos e alimentos para animais de estimação;1277;5117;24105;8045;3094
+Comércio varejista de produtos saneantes domissanitários;452;2747;8965;2835;2368
+Comércio varejista de fogos de artifício e artigos pirotécnicos;54;108;270;47;38
+Comércio varejista de equipamentos para escritório;761;2210;7119;3450;1500
+Comércio varejista de artigos fotográficos e para filmagem;756;2550;8676;3476;3480
+Comércio varejista de armas e munições;67;248;425;142;87
+Comércio varejista de outros produtos não especificados anteriormente;9639;32486;168296;50433;20013
+Transporte ferroviário de carga;130;6795;20039;4943;1239
+Transporte ferroviário de passageiros intermunicipal e interestadual;45;91;39;4;23
+Transporte ferroviário de passageiros municipal e em região metropolitana;0;2061;13763;9;2
+Transporte metroviário;0;638;12596;1057;1057
+Transporte rodoviário coletivo de passageiros, com itinerário fixo, municipal;24448;65518;211487;54357;22546
+Transporte rodoviário coletivo de passageiros, com itinerário fixo, intermunicipal em região metropolitana;1396;21352;86294;16857;5975
+Transporte rodoviário coletivo de passageiros, com itinerário fixo, intermunicipal, exceto em região metropolitana;1655;11206;40830;15579;5298
+Transporte rodoviário coletivo de passageiros, com itinerário fixo, interestadual;2958;12654;34324;8156;7216
+Transporte rodoviário coletivo de passageiros, com itinerário fixo, internacional;89;96;153;171;30
+Serviço de táxi;259;1468;3670;514;367
+Serviço de transporte de passageiros - locação de automóveis com motorista;1960;4915;8203;1529;3115
+Transporte escolar;748;1169;7705;3325;1655
+Transporte rodoviário coletivo de passageiros, sob regime de fretamento, municipal;2657;2920;8971;3505;2770
+Transporte rodoviário coletivo de passageiros, sob regime de fretamento, intermunicipal, interestadual e internacional;712;3581;27714;4376;1517
+Organização de excursões em veículos rodoviários próprios, municipal;2;81;239;68;81
+Organização de excursões em veículos rodoviários próprios, intermunicipal, interestadual e internacional;60;259;1209;1023;354
+Outros transportes rodoviários de passageiros não especificados anteriormente;196;261;628;1308;130
+Transporte rodoviário de carga, exceto produtos perigosos e mudanças, municipal;5607;15148;69522;23986;14190
+Transporte rodoviário de carga, exceto produtos perigosos e mudanças, intermunicipal, interestadual e internacional;24393;68658;373955;182934;51501
+Transporte rodoviário de produtos perigosos;1238;7935;35216;10192;5027
+Transporte rodoviário de mudanças;314;1312;4458;1100;597
+Transporte dutoviário;213;794;2061;344;84
+Trens turísticos, teleféricos e similares;0;7;116;174;3
+Transporte marítimo de cabotagem - Carga;185;275;7698;127;1
+Transporte marítimo de cabotagem - passageiros;1;141;121;1;6
+Transporte marítimo de longo curso - Carga;136;33;1015;42;1
+Transporte marítimo de longo curso - Passageiros;22;4;1;1;3
+Transporte por navegação interior de carga, municipal, exceto travessia;542;31;204;137;110
+Transporte por navegação interior de carga, intermunicipal, interestadual e internacional, exceto travessia;5991;18;1033;1112;355
+Transporte por navegação interior de passageiros em linhas regulares, municipal, exceto travessia;715;109;69;92;8
+Transporte por navegação interior de passageiros em linhas regulares, intermunicipal, interestadual e internacional, exceto travessia;601;52;52;93;6
+Navegação de apoio marítimo;38;1308;13061;401;3
+Navegação de apoio portuário;154;928;1754;178;0
+Serviços de rebocadores e empurradores;0;0;0;0;0
+Transporte por navegação de travessia, municipal;402;180;136;167;47
+Transporte por navegação de travessia, intermunicipal;936;471;1276;265;33
+Transporte aquaviário para passeios turísticos;30;202;71;129;45
+Outros transportes aquaviários não especificados anteriormente;17;248;48;27;6
+Transporte aéreo de passageiros regular;2257;5122;44935;4220;3610
+Serviço de táxi aéreo e locação de aeronaves com tripulação;594;419;4955;451;444
+Outros serviços de transporte aéreo de passageiros não-regular;261;106;788;69;115
+Transporte aéreo de carga;72;118;1758;238;81
+Transporte espacial;8;0;4;0;70
+Armazéns gerais - emissão de warrant;1785;5472;34796;10343;4860
+Guarda-móveis;81;208;1063;296;34
+Depósitos de mercadorias para terceiros, exceto armazéns gerais e guarda-móveis;1267;3574;15841;3560;1538
+Carga e descarga;1353;6040;26421;10018;2717
+Concessionárias de rodovias, pontes, túneis e serviços relacionados;2;1697;15631;3923;351
+Terminais rodoviários e ferroviários;265;962;4265;1090;129
+Estacionamento de veículos;742;4677;51697;9753;2973
+Serviços de apoio ao transporte por táxi, inclusive centrais de chamada;60;566;821;182;132
+Serviços de reboque de veículos;275;1555;6122;2275;856
+Outras atividades auxiliares dos transportes terrestres não especificadas anteriormente;389;3095;10906;2289;1182
+Administração da infra-estrutura portuária;134;935;3020;706;11
+Operações de terminais;1831;3122;16233;5799;27
+Gestão de terminais aquaviários;0;0;0;0;0
+Atividades de agenciamento marítimo;175;457;7055;1761;19
+Atividades auxiliares dos transportes aquaviários não especificadas anteriormente(Desativado);475;956;3305;1453;30
+Serviços de praticagem;0;0;0;0;0
+Atividades auxiliares dos transportes aquaviários não especificadas anteriormente;0;0;0;0;0
+Operação dos aeroportos e campos de aterrissagem;1573;2458;8172;1402;3030
+Atividades auxiliares dos transportes aéreos, exceto operação dos aeroportos e campos de aterrissagem;2518;3521;17042;2420;2020
+Comissaria de despachos;175;106;4294;1425;53
+Atividades de despachantes aduaneiros;308;432;5534;1879;75
+Agenciamento de cargas, exceto para o transporte marítimo;507;428;9433;1418;333
+Organização logística do transporte de carga;1791;7839;30532;3660;767
+Operador de transporte multimodal - OTM;180;601;2932;1089;28
+Atividades do Correio Nacional;6612;22431;64101;20173;13772
+Atividades de franqueadas e permissionárias do Correio Nacional;91;665;6844;1882;531
+Serviços de malote não realizados pelo Correio Nacional;441;2752;10938;2823;1057
+Serviços de entrega rápida;923;5053;20174;5165;2968
+Hotéis;11595;64755;115262;44534;22931
+Apart-hotéis;378;1621;2199;1217;453
+Motéis;3821;11430;23368;6680;5085
+Albergues, exceto assistenciais;25;240;566;291;95
+Campings;0;19;339;161;64
+Pensões (alojamento);362;1240;2817;992;215
+Outros alojamentos não especificados anteriormente;234;3568;7428;2336;640
+Restaurantes e similares;26393;120185;375023;120572;60835
+Bares e outros estabelecimentos especializados em servir bebidas (Desativado);1460;9450;34179;9284;5367
+Lanchonetes, casas de chá, de sucos e similares;12592;56572;281023;62380;31320
+Bares e outros estabelecimentos especializados em servir bebidas, sem entretenimento;0;0;0;0;0
+Bares e outros estabelecimentos especializados em servir bebidas, com entretenimento;0;0;0;0;0
+Serviços ambulantes de alimentação;274;1117;9005;2269;748
+Fornecimento de alimentos preparados preponderantemente para empresas;10295;26111;129128;31342;10294
+Serviços de alimentação para eventos e recepções - bufê;1642;4016;15564;3080;2646
+Cantinas - serviços de alimentação privativos;255;2192;20581;2435;851
+Fornecimento de alimentos preparados preponderantemente para consumo domiciliar;1225;3225;13324;3645;1444
+Edição de livros;108;608;8533;2094;244
+Edição de jornais (Desativado);493;782;6694;2148;566
+Edição de jornais diarios;0;0;0;0;0
+Edição de jornais nao diarios;0;0;0;0;0
+Edição de revistas;22;178;2720;601;92
+Edição de cadastros, listas e outros produtos gráficos;160;476;2303;1101;480
+Edição integrada à impressão de livros;37;908;9733;2302;497
+Edição integrada à impressão de jornais (Desativado);1360;4454;14249;8818;2373
+Edição integrada à impressão de jornais diarios;0;0;0;0;0
+Edição integrada à impressão de jornais nao diarios;0;0;0;0;0
+Edição integrada à impressão de revistas;106;41;4530;242;31
+Edição integrada à impressão de cadastros, listas e outros produtos gráficos;799;3349;14224;5662;1626
+Estúdios cinematográficos;60;180;631;102;99
+Produção de filmes para publicidade;215;432;1166;498;314
+Atividades de produção cinematográfica, de vídeos e de programas de televisão não especificadas anteriormente;59;676;4248;696;511
+Serviços de dublagem;0;2;86;0;0
+Serviços de mixagem sonora em produção audiovisual;0;7;194;34;17
+Atividades de pós-produção cinematográfica, de vídeos e de programas de televisão não especificadas anteriormente;59;167;995;200;40
+Distribuição cinematográfica, de vídeo e de programas de televisão;68;165;643;36;23
+Atividades de exibição cinematográfica;738;1886;8477;1802;1124
+Atividades de gravação de som e de edição de música;248;548;1618;567;290
+Atividades de rádio;2302;6393;13502;10853;5275
+Atividades de televisão aberta;3732;6716;30693;6483;3957
+Programadoras;8;140;2345;262;49
+Atividades relacionadas à televisão por assinatura, exceto programadoras;0;543;210;126;154
+Serviços de telefonia fixa comutada - STFC;1662;6997;31003;14487;4191
+Serviços de redes de transporte de telecomunicações - SRTT;0;145;233;45;43
+Serviços de comunicação multimídia - SCM;416;1299;4040;2138;1056
+Serviços de telecomunicações por fio não especificados anteriormente;10;456;3698;194;105
+Telefonia móvel celular;947;3990;14650;2027;1596
+Serviço móvel especializado - SME;0;166;5862;133;71
+Serviços de telecomunicações sem fio não especificados anteriormente;154;151;2007;95;508
+Telecomunicações por satélite;367;376;870;165;346
+Operadoras de televisão por assinatura por cabo;408;1297;10993;2942;497
+Operadoras de televisão por assinatura por microondas;1;128;115;69;32
+Operadoras de televisão por assinatura por satélite;5;136;2393;19;42
+Provedores de acesso às redes de comunicações;776;3986;14686;3213;916
+Provedores de voz sobre protocolo internet - VOIP;1;35;353;36;2
+Outras atividades de telecomunicações não especificadas anteriormente;555;14637;36875;2251;1673
+Desenvolvimento de programas de computador sob encomenda (Desativado);545;8419;62391;13453;9583
+Desenvolvimento de programas de computador sob encomenda;0;0;0;0;0
+web design;0;0;0;0;0
+Desenvolvimento e licenciamento de programas de computador customizáveis;137;2139;16267;9065;2477
+Desenvolvimento e licenciamento de programas de computador não-customizáveis;278;2540;27564;9865;3942
+Consultoria em tecnologia da informação;382;7508;51477;6549;5158
+Suporte técnico, manutenção e outros serviços em tecnologia da informação;1517;6267;56161;14432;8322
+Tratamento de dados, provedores de serviços de aplicação e serviços de hospedagem na internet;1314;4622;40921;23318;3447
+Portais, provedores de conteúdo e outros serviços de informação na internet;104;893;8665;1616;421
+Agências de notícias;23;127;716;146;428
+Outras atividades de prestação de serviços de informação não especificadas anteriormente;543;2359;14867;3132;1777
+Banco Central;58;560;1487;904;1754
+Bancos comerciais;2830;191;1989;88;135
+Bancos múltiplos, com carteira comercial;12418;47926;222128;59583;62400
+Caixas econômicas;4011;17168;44032;17475;15179
+Bancos cooperativos;0;18;15;395;404
+Cooperativas centrais de crédito;123;175;607;764;249
+Cooperativas de crédito mútuo;1080;1718;11961;15184;4169
+Cooperativas de crédito rural;400;458;2539;5109;957
+Bancos múltiplos, sem carteira comercial;0;62;2720;702;0
+Bancos de investimento;0;0;772;21;3
+Bancos de desenvolvimento;0;28;3269;590;34
+Agências de fomento;263;318;401;447;278
+Sociedades de crédito imobiliário;1;39;61;106;2
+Associações de poupança e empréstimo;46;54;121;78;961
+Companhias hipotecárias;0;58;170;20;0
+Sociedades de crédito, financiamento e investimento - financeiras;158;677;5106;1677;457
+Sociedades de crédito ao microempreendedor;89;1;128;44;4
+Bancos de Câmbio;0;0;46;0;0
+Outras Instituições de Intermediação Não-Monetária não especificadas anteriormente;2;0;5;1;0
+Arrendamento mercantil;0;19;386;8;6
+Sociedades de capitalização;2;26;879;130;48
+Holdings de instituições financeiras;5;53;88;47;9
+Holdings de instituições não-financeiras;641;2459;23282;4415;2243
+Outras sociedades de participação, exceto holdings;167;798;4660;732;788
+Fundos de investimento, exceto previdenciários e imobiliários;0;2;4;0;0
+Fundos de investimento previdenciários;0;414;0;0;0
+Fundos de investimento imobiliários;0;1;0;0;0
+Sociedades de fomento mercantil - factoring;516;865;3763;963;558
+Securitização de créditos;10;74;299;269;158
+Administração de consórcios para aquisição de bens e direitos;204;1022;7333;2248;936
+Clubes de investimento;1;5;4;3;18
+Sociedades de investimento;0;0;34;7;8
+Fundo garantidor de crédito;0;0;0;0;0
+Caixas de financiamento de corporações;0;0;3;0;0
+Concessão de crédito pelas OSCIP;15;690;29;519;0
+Outras atividades de serviços financeiros não especificadas anteriormente;25;1521;1574;438;228
+Seguros de vida;51;331;5898;1600;229
+Planos de auxílio-funeral;2;667;581;556;187
+Seguros não-vida;225;1199;30759;2295;1131
+Seguros-saúde;36;220;5426;176;85
+Resseguros;0;0;587;13;0
+Previdência complementar fechada;230;1354;4813;985;2302
+Previdência complementar aberta;71;199;2192;682;117
+Planos de saúde;2479;11403;45270;13026;3961
+Bolsa de valores;0;1;10;3;3
+Bolsa de mercadorias;0;5;30;15;18
+Bolsa de mercadorias e futuros;0;2;1429;35;1
+Administração de mercados de balcão organizados;0;0;361;0;0
+Corretoras de títulos e valores mobiliários;5;35;4490;195;6
+Distribuidoras de títulos e valores mobiliários;2;22;2889;167;74
+Corretoras de câmbio;50;253;2169;364;61
+Corretoras de contratos de mercadorias;3;21;187;64;82
+Agentes de investimentos em aplicações financeiras;24;57;215;42;22
+Administração de cartões de crédito;48;1813;2524;1504;454
+Serviços de liquidação e custódia;2;42;3;9;0
+Correspondentes de instituições financeiras;763;1913;3376;789;720
+Representações de bancos estrangeiros;0;1;44;2;0
+Caixas eletrônicos;0;0;1021;0;2
+Operadoras de cartões de débito;0;48;106;3;2
+Outras atividades auxiliares dos serviços financeiros não especificadas anteriormente;166;1169;5382;1189;628
+Peritos e avaliadores de seguros;17;225;1383;157;37
+Auditoria e consultoria atuarial;3;133;212;31;146
+Corretores e agentes de seguros, de planos de previdência complementar e de saúde;744;3501;24876;5268;3853
+Atividades auxiliares dos seguros, da previdência complementar e dos planos de saúde não especificadas anteriormente;47;440;5544;1560;427
+Atividades de administração de fundos por contrato ou comissão;6;123;5454;147;68
+Compra e venda de imóveis próprios;1538;5844;8904;2586;1120
+Aluguel de imóveis próprios;731;3979;14438;4296;1780
+Loteamento de imóveis próprios;1;185;96;41;7
+Corretagem na compra e venda e avaliação de imóveis;850;2525;10427;3787;1703
+Corretagem no aluguel de imóveis;289;3291;16119;6508;1410
+Gestão e administração da propriedade imobiliária;1373;8110;24603;5777;3160
+Serviços advocatícios;2068;11203;47892;18203;5700
+Atividades auxiliares da justiça;605;89;638;373;76
+Agente de propriedade industrial;3;32;1117;343;4
+Cartórios;2925;7510;31062;16173;6301
+Atividades de contabilidade;9585;30368;136592;51419;20299
+Atividades de consultoria e auditoria contábil e tributária;321;1602;9537;2268;677
+Atividades de consultoria em gestão empresarial, exceto consultoria técnica específica;4077;13762;67119;11338;4612
+Serviços de arquitetura;336;1384;5605;1380;646
+Serviços de engenharia;6041;47936;153791;26521;10732
+Serviços de cartografia, topografia e geodésia;1257;1334;5643;1358;1303
+Atividades de estudos geológicos;343;982;4007;263;840
+Serviços de desenho técnico relacionados à arquitetura e engenharia;85;445;2812;703;154
+Serviços de perícia técnica relacionados à segurança do trabalho;82;845;1222;503;51
+Atividades técnicas relacionadas à engenharia e arquitetura não especificadas anteriormente;142;1621;13441;1121;1032
+Testes e análises técnicas;436;2218;18349;2743;1101
+Pesquisa e desenvolvimento experimental em ciências físicas e naturais;2912;5399;19987;6999;4919
+Pesquisa e desenvolvimento experimental em ciências sociais e humanas;1378;1669;2407;753;81
+Agências de publicidade;1008;4035;20553;3795;2183
+Agenciamento de espaços para publicidade, exceto em veículos de comunicação;162;952;2838;1250;720
+Criação de estandes para feiras e exposições;6;38;167;213;7
+Promoção de vendas;282;2727;12124;2595;1176
+Marketing direto;159;716;3171;1132;253
+Consultoria em publicidade;16;193;1546;126;131
+Outras atividades de publicidade não especificadas anteriormente;151;1023;14642;2001;446
+Pesquisas de mercado e de opinião pública;93;576;6990;367;290
+Design;19;75;453;204;61
+Decoração de interiores;88;271;1935;286;160
+Design de produtos;0;0;0;0;0
+Atividades de Design não Especificadas Anteriormente;0;0;0;0;0
+Atividades de produção de fotografias, exceto aérea e submarina;223;797;5036;2313;794
+Atividades de produção de fotografias aéreas e submarinas;10;39;334;72;10
+Laboratórios fotográficos;203;541;2279;1120;219
+Filmagem de festas e eventos;69;709;1237;510;189
+Serviços de microfilmagem;8;131;1769;110;19
+Serviços de tradução, interpretação e similares;112;159;807;192;94
+Escafandria e mergulho;34;94;2355;174;1
+Serviços de agronomia e de consultoria às atividades agrícolas e pecuárias;344;4134;4015;826;1176
+Atividades de intermediação e agenciamento de serviços e negócios em geral, exceto imobiliários;703;23553;17171;1903;1241
+Agenciamento de profissionais para atividades esportivas, culturais e artísticas;1;33;351;80;32
+Outras atividades profissionais, científicas e técnicas não especificadas anteriormente;1513;1769;11287;3144;1905
+Atividades veterinárias;194;540;4129;1161;493
+Locação de automóveis sem condutor;3664;14716;20789;5547;3472
+Locação de embarcações sem tripulação, exceto para fins recreativos;30;119;471;22;40
+Locação de aeronaves sem tripulação;4;2;25;1;9
+Locação de outros meios de transporte não especificados anteriormente, sem condutor;383;920;4273;638;347
+Aluguel de equipamentos recreativos e esportivos;87;440;1240;416;231
+Aluguel de fitas de vídeo, DVDs e similares;153;497;3425;1137;331
+Aluguel de objetos do vestuário, jóias e acessórios;213;1959;5438;2641;1195
+Aluguel de aparelhos de jogos eletrônicos;23;264;487;79;29
+Aluguel de móveis, utensílios e aparelhos de uso doméstico e pessoal, instrumentos musicais;67;1050;4453;835;691
+Aluguel de material médico;8;26;244;8;131
+Aluguel de outros objetos pessoais e domésticos não especificados anteriormente;29;292;1096;280;137
+Aluguel de máquinas e equipamentos agrícolas sem operador;512;1665;2349;443;768
+Aluguel de máquinas e equipamentos para construção sem operador, exceto andaimes;1899;10785;28082;3977;3680
+Aluguel de andaimes;287;1432;5605;938;448
+Aluguel de máquinas e equipamentos para escritório;766;2729;10243;1106;606
+Aluguel de máquinas e equipamentos para extração de minérios e petróleo, sem operador;14;138;504;9;0
+Aluguel de equipamentos científicos, médicos e hospitalares, sem operador;74;190;1434;138;79
+Aluguel de palcos, coberturas e outras estruturas de uso temporário, exceto andaimes;206;1931;7042;1551;727
+Aluguel de outras máquinas e equipamentos comerciais e industriais não especificados anteriormente, sem operador;1398;4909;23785;4448;1557
+Gestão de ativos intangíveis não-financeiros;8;197;3610;641;100
+Seleção e agenciamento de mão-de-obra;4868;35785;73786;10255;6180
+Locação de mão-de-obra temporária;12499;71838;174901;30339;17194
+Fornecimento e gestão de recursos humanos para terceiros;1409;17007;84879;9242;8752
+Agências de viagens;2695;10087;38280;11939;5364
+Operadores turísticos;164;647;1545;482;136
+Serviços de reservas e outros serviços de turismo não especificados anteriormente;103;1701;1689;479;826
+Atividades de vigilância e segurança privada;36566;106151;283180;84618;49378
+Serviços de adestramento de cães de guarda;63;1266;109;71;2
+Atividades de transporte de valores;8370;20890;39854;9119;6000
+Atividades de monitoramento de sistemas de segurança (Desativado);2450;8559;27488;9435;3956
+Atividades de monitoramento de sistemas de segurança eletronico;0;0;0;0;0
+Outras atividades de serviços de segurança;0;0;0;0;0
+Atividades de investigação particular;73;14;192;9;1
+Serviços combinados para apoio a edifícios, exceto condomínios prediais;2630;9398;95428;19783;4943
+Condomínios prediais;13318;102229;343032;68524;34835
+Limpeza em prédios e em domicílios;47693;76909;377924;98778;65311
+Imunização e controle de pragas urbanas;552;2184;10990;2308;777
+Atividades de limpeza não especificadas anteriormente;1611;10748;42857;16139;6086
+Atividades paisagísticas;740;2065;12452;3082;1668
+Serviços combinados de escritório e apoio administrativo;6398;20566;138682;35483;16439
+Fotocópias;847;3178;10066;2919;3302
+Preparação de documentos e serviços especializados de apoio administrativo não especificados anteriormente;705;5047;35939;11339;4593
+Atividades de teleatendimento;727;78854;308262;28404;29691
+Serviços de organização de feiras, congressos, exposições e festas;859;4537;20956;4824;3193
+Casas de festas e eventos;152;851;2955;658;469
+Atividades de cobrança e informações cadastrais;2416;13976;61953;17746;4973
+Envasamento e empacotamento sob contrato;296;1002;9873;1383;514
+Medição de consumo de energia elétrica, gás e água;218;3778;2538;2130;2332
+Emissão de vales-alimentação, vales-transporte e similares;43;147;3543;316;14
+Serviços de gravação de carimbos, exceto confecção;55;93;78;28;31
+Leiloeiros independentes;20;77;1189;186;175
+Serviços de levantamento de fundos sob contrato;0;6;104;206;0
+Casas lotéricas;1981;8587;19448;7284;3532
+Salas de acesso à internet;105;304;736;427;140
+Outras atividades de serviços prestados principalmente às empresas não especificadas anteriormente;6287;64219;228673;39415;24909
+Administração pública em geral;866502;2340257;3193126;970246;738633
+Regulação das atividades de saúde, educação, serviços culturais e outros serviços sociais;2858;21703;7953;103507;42713
+Regulação das atividades econômicas;1747;1839;4842;712;2385
+Relações exteriores;0;0;14;3;3810
+Defesa;13597;15040;74966;7973;221768
+Justiça;20552;55181;118107;33760;40660
+Segurança e ordem pública;33933;82997;154039;72065;65573
+Defesa Civil;777;5118;15930;2787;2736
+Seguridade social obrigatória;5822;13851;17829;8546;9291
+Educação infantil - creche;1524;4704;42714;13047;4366
+Educação infantil - pré-escola;7318;32023;85436;20581;12696
+Ensino fundamental;10509;79419;166703;30999;25514
+Ensino médio;6106;33750;72086;24627;11479
+Educação superior - graduação;25670;51617;123192;55596;21661
+Educação superior - graduação e pós-graduação;9628;66806;184172;77237;26703
+Educação superior - pós-graduação e extensão;1895;10939;21663;4543;4275
+Educação profissional de nível técnico;5835;6799;23233;9760;2185
+Educação profissional de nível tecnológico;1039;12916;6532;4510;3160
+Administração de caixas escolares;1522;109;4192;177;4
+Atividades de apoio à educação, exceto caixas escolares;205;1819;16924;4193;766
+Ensino de esportes;313;667;4516;1244;521
+Ensino de dança;69;348;1656;396;188
+Ensino de artes cênicas, exceto dança;2;2;52;31;5
+Ensino de música;293;109;3626;285;137
+Ensino de arte e cultura não especificado anteriormente;12;184;955;166;133
+Ensino de idiomas;2355;7029;39289;8647;3983
+Formação de condutores;3216;9505;35706;15136;5683
+Cursos de pilotagem;36;165;742;211;80
+Treinamento em informática;553;1958;8350;1916;991
+Treinamento em desenvolvimento profissional e gerencial;2184;4103;16154;6694;2404
+Cursos preparatórios para concursos;604;1629;5953;1619;1519
+Outras atividades de ensino não especificadas anteriormente;8122;25692;71265;24340;16793
+Atividades de atendimento hospitalar, exceto pronto-socorro e unidades para atendimento a urgências;27474;134526;483051;157726;50898
+Atividades de atendimento em pronto-socorro e unidades hospitalares para atendimento a urgências;7232;50580;135198;25196;10227
+UTI móvel;13;201;2929;1263;222
+Serviços móveis de atendimento a urgências, exceto por UTI móvel;11;918;291;57;5
+Serviços de remoção de pacientes, exceto os serviços móveis de atendimento a urgências;27;297;1926;383;62
+Atividade médica ambulatorial com recursos para realização de procedimentos cirúrgicos;1260;6132;16159;4474;1616
+Atividade médica ambulatorial com recursos para realização de exames complementares;781;5778;22246;6133;2328
+Atividade médica ambulatorial restrita a consultas;3365;14795;63052;17287;6133
+Atividade odontológica com recursos para realização de procedimentos cirúrgicos;3510;11533;44020;15617;9156
+Atividade odontológica sem recursos para realização de procedimentos cirúrgicos;0;0;0;0;0
+Serviços de vacinação e imunização humana;48;205;582;144;52
+Atividades de reprodução humana assistida;1;39;443;79;24
+Atividades de atenção ambulatorial não especificadas anteriormente;332;1443;10340;2549;816
+Laboratórios de anatomia patológica e citológica;599;2492;6798;1770;1100
+Laboratórios clínicos;4444;17264;43496;14125;7449
+Serviços de diálise e nefrologia;677;3366;6108;2027;1211
+Serviços de tomografia;145;614;1586;362;615
+Serviços de diagnóstico por imagem com uso de radiação ionizante, exceto tomografia;1517;4878;18294;4881;3490
+Serviços de ressonância magnética;16;675;1571;436;133
+Serviços de diagnóstico por imagem sem uso de radiação ionizante, exceto ressonância magnética;228;1099;2123;578;599
+Serviços de diagnóstico por registro gráfico - ECG, EEG e outros exames análogos;104;277;630;170;228
+Serviços de diagnóstico por métodos ópticos - endoscopia e outros exames análogos;75;257;1426;277;217
+Serviços de quimioterapia;62;448;2023;405;246
+Serviços de radioterapia;22;318;424;312;75
+Serviços de hemoterapia;1033;577;4725;465;297
+Serviços de litotripsia;8;1;26;28;1
+Serviços de bancos de células e tecidos humanos;0;0;237;11;0
+Atividades de serviços de complementação diagnóstica e terapêutica não especificadas anteriormente;771;4657;27192;3201;1805
+Atividades de enfermagem;160;452;1154;567;130
+Atividades de profissionais da nutrição;76;169;414;84;99
+Atividades de psicologia e psicanálise;95;539;2447;584;503
+Atividades de fisioterapia;471;2062;5125;1957;819
+Atividades de terapia ocupacional;28;122;359;75;31
+Atividades de fonoaudiologia;247;202;771;263;137
+Atividades de terapia de nutrição enteral e parenteral;44;43;110;5;100
+Atividades de profissionais da área de saúde não especificadas anteriormente;1789;7273;27240;5042;2813
+Atividades de apoio à gestão de saúde;1102;11130;12974;13326;3201
+Atividades de práticas integrativas e complementares em saúde humana;219;920;2432;920;737
+Atividades de bancos de leite humano;0;1;3;0;0
+Atividades de Acupuntura;0;5;12;1;5
+Atividades de Podologia;1;19;1;1;0
+Outras atividades de atenção à saúde humana não especificadas anteriormente;4590;10414;57171;11020;9090
+Clínicas e residências geriátricas;23;216;2779;744;74
+Instituições de longa permanência para idosos;78;1384;21618;5081;992
+Atividades de assistência a deficientes físicos, imunodeprimidos e convalescentes;0;18;4481;177;37
+Centros de apoio a pacientes com câncer e com AIDS;62;293;1698;338;55
+Condomínios residenciais para idosos;49;124;1311;656;4
+Atividades de fornecimento de infra-estrutura de apoio e assistência a paciente no domicílio;141;2629;3508;320;497
+Atividades de centros de assistência psicossocial;12;340;1068;314;88
+Atividades de assistência psicossocial e à saúde a portadores de distúrbios psíquicos, deficiência mental e dependência química não especificadas ante;14;1091;8519;1320;760
+Orfanatos;46;129;2268;592;215
+Albergues assistenciais;1;226;3089;497;186
+Atividades de assistência social prestadas em residências coletivas e particulares não especificadas anteriormente;312;3002;20430;4781;979
+Serviços de assistência social sem alojamento;5260;15015;82443;15017;11595
+Produção teatral;3;44;459;100;20
+Produção musical;53;829;1045;449;520
+Produção de espetáculos de dança;6;98;126;18;20
+Produção de espetáculos circenses, de marionetes e similares;11;28;137;17;11
+Produção de espetáculos de rodeios, vaquejadas e similares;21;83;126;24;18
+Atividades de sonorização e de iluminação;275;569;1419;690;282
+Artes cênicas, espetáculos e atividades complementares não especificados anteriormente;161;2170;5724;1098;426
+Atividades de artistas plásticos, jornalistas independentes e escritores;6;18;265;24;47
+Restauração de obras de arte;8;41;102;22;5
+Gestão de espaços para artes cênicas, espetáculos e outras atividades artísticas;673;138;641;49;71
+Atividades de bibliotecas e arquivos;12;603;781;632;131
+Atividades de museus e de exploração de lugares e prédios históricos e atrações similares;294;212;831;100;33
+Restauração e conservação de lugares e prédios históricos;23;63;306;35;42
+Atividades de jardins botânicos, zoológicos, parques nacionais, reservas ecológicas e áreas de proteção ambiental;256;91;1457;645;126
+Casas de bingo;9;63;100;13;11
+Exploração de apostas em corridas de cavalos;0;17;639;53;5
+Exploração de jogos de azar e apostas não especificados anteriormente;35;48;183;65;26
+Gestão de instalações de esportes;33;166;1214;251;90
+Clubes sociais, esportivos e similares;1251;6777;53362;13477;4233
+Atividades de condicionamento físico;2811;9624;43852;9905;6911
+Produção e promoção de eventos esportivos;227;710;3982;498;289
+Outras atividades esportivas não especificadas anteriormente;284;913;6168;1430;582
+Parques de diversão e parques temáticos;266;3611;3847;2539;665
+Discotecas, danceterias, salões de dança e similares;259;392;3152;1371;533
+Exploração de boliches;108;135;412;224;144
+Exploração de jogos de sinuca, bilhar e similares;31;79;467;20;43
+Exploração de jogos eletrônicos recreativos;62;394;2036;479;187
+Outras atividades de recreação e lazer não especificadas anteriormente;529;2184;12329;3653;1636
+Atividades de organizações associativas patronais e empresariais;666;3030;14088;10673;3214
+Atividades de organizações associativas profissionais (Desativado);2192;8267;24214;8333;3485
+Atividades de atividades de fiscalização profissional;0;0;0;0;0
+Outras atividades associativas profissionais;0;0;0;0;0
+Atividades de organizações sindicais;3729;21692;48070;36113;13190
+Atividades de associações de defesa de direitos sociais;13936;54161;212849;57843;26769
+Atividades de organizações religiosas;10279;28007;69039;22269;11015
+Atividades de organizações políticas;143;527;827;302;524
+Atividades de organizações associativas ligadas à cultura e à arte;607;3827;11082;2538;822
+Atividades associativas não especificadas anteriormente;6237;17629;67059;20624;15737
+Reparação e manutenção de computadores e de equipamentos periféricos;1372;8965;29776;6842;5310
+Reparação e manutenção de equipamentos de comunicação;242;1149;7314;972;511
+Reparação e manutenção de equipamentos eletroeletrônicos de uso pessoal e doméstico;1237;5664;16798;5901;2794
+Reparação de calçados, bolsas e artigos de viagem;71;186;1153;346;102
+Chaveiros;110;339;1891;754;241
+Reparação de relógios;84;224;808;147;64
+Reparação de bicicletas, triciclos e outros veículos não-motorizados;83;111;324;94;54
+Reparação de artigos do mobiliário;80;860;3142;1018;410
+Reparação de jóias;8;108;477;69;85
+Reparação e manutenção de outros objetos e equipamentos pessoais e domésticos não especificados anteriormente;264;1997;7517;2082;889
+Lavanderias;1367;9572;23864;8608;3985
+Tinturarias;32;419;1838;308;25
+Toalheiros;149;374;5462;1005;509
+Cabeleireiros;1144;17028;41686;5039;3183
+Atividades de estética e outros serviços de cuidados com a beleza;1047;6296;19199;3041;2265
+Gestão e manutenção de cemitérios;328;934;1813;856;357
+Serviços de cremação;2;48;333;28;1
+Serviços de sepultamento;82;256;717;88;229
+Serviços de funerárias;1506;6630;8369;2872;2914
+Serviços de somatoconservação;1;14;139;21;36
+Atividades funerárias e serviços relacionados não especificados anteriormente;143;945;2094;714;457
+Clínicas de estética e similares(Desativado);0;0;0;0;0
+Agências matrimoniais;1;107;125;68;37
+Alojamento, higiene e embelezamento de animais;151;520;3364;1523;419
+Exploração de máquinas de serviços pessoais acionadas por moeda;4;14;127;10;8
+Atividades de sauna e banhos;0;35;28;5;1
+Serviços de tatuagem e colocação de piercing;0;23;14;12;2
+Alojamento de animais domésticos;0;0;0;0;0
+Higiene e embelezamento de animais doméstico;0;0;0;0;0
+Outras atividades de serviços pessoais não especificadas anteriormente;752;2521;17313;4729;2721
+Serviços domésticos;346;1084;1833;896;713
+Organismos internacionais e outras instituições extraterritoriais;69;851;3570;157;1373
+Nao informado;0;0;0;0;0
+Nao se aplica;0;0;0;0;0
+Invalida;0;0;0;0;0
+Ignorada;0;0;0;0;0
+{ñ class};0;0;0;0;0
+
+Seleções vigentes
+Variável;Critério;Valor
+Ano;igual a;2013
+Vínculo Ativo 31/12;igual a;Sim

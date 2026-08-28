@@ -1,0 +1,285 @@
+# Para ler/escrever arquivos no formato do excel
+library(readxl)
+# Para fazer o cálculo do QL
+library(EconGeo)
+# Para baixar shapefiles dos municípios
+library(geobr)
+library(REAT)
+library(dplyr)
+library(ggplot2)
+library(sf)
+library(ggspatial)
+
+# Dados extraidos de https://bi.mte.gov.br/bgcaged/
+
+# O arquivo csv importado deve conter nas linhas TODAS as subclasses CNAE.20
+# e nas colunas os municipios.
+
+# Para importar todas as subclases CNAE 2.0, basta marcar a opção de
+# importar linhas zeradas na hora de realizar a consulta
+
+
+emprego_t0 = read.csv('../Dados/vinculos_2010_ClasseCNAE_municipiosPI.csv', 
+                      sep= ';',
+                      skip =1,
+                      nrows = 1363,
+                      fileEncoding = 'latin1')
+
+subclasses = emprego_t0 |> 
+  select(CNAE.2.0.Subclasse) |>
+  unlist(use.names=FALSE)
+
+tmp_df = emprego_t0 |> select(-CNAE.2.0.Subclasse)
+  
+emprego_t0 = as_tibble(cbind(municipios = names(tmp_df), t(tmp_df))) |>
+  setNames(c('Municipio',subclasses)) |>
+  mutate(across(-Municipio, as.integer))
+
+emprego_t1 = read.csv('../Dados/vinculos_2021_ClasseCNAE_municipiosPI.csv', 
+                      sep= ';',
+                      skip =1, 
+                      nrows = 1363, 
+                      fileEncoding = 'latin1')
+
+subclasses = emprego_t1 |> 
+  select(CNAE.2.0.Subclasse) |>
+  unlist(use.names=FALSE)
+
+tmp_df = emprego_t1 |> select(-CNAE.2.0.Subclasse)
+
+emprego_t1 = as_tibble(cbind(municipios = names(tmp_df), t(tmp_df))) |>
+  setNames(c('Municipio',subclasses))  |>
+  mutate(across(-Municipio, as.integer))
+
+# Criar os dados para passar para a função
+mun_t0 = emprego_t0 |>
+  filter(Municipio == 'PI.BAIXA.GRANDE.DO.RIBEIRO')
+
+mun_t1 = emprego_t1 |>
+  filter(Municipio == 'PI.BAIXA.GRANDE.DO.RIBEIRO')
+
+columns0_t0 = which(colSums(mun_t0==0) == nrow(mun_t0))
+columns0_t1 = which(colSums(mun_t1==0) == nrow(mun_t1))
+
+#zero_in_both_years = c(1,intersect(columns0_t0, columns0_t1))
+
+zero_in_both_years = c(1,unique(union(columns0_t0, columns0_t1)))
+
+mun_t0 = as.matrix(mun_t0[-zero_in_both_years])[1,]
+mun_t1 = as.matrix(mun_t1[-zero_in_both_years])[1,]
+
+piaui_t0 = colSums(emprego_t0[,-zero_in_both_years])
+
+piaui_t1 = colSums(emprego_t1[,-zero_in_both_years])
+
+
+shift.2 <- function(region_t, region_t1, nation_t, nation_t1) {
+  
+  industries <- length(region_t)
+  
+  sum_region_t <- sum(region_t)
+  sum_region_t1 <- sum(region_t1)
+  sum_nation_t <- sum(nation_t)
+  sum_nation_t1 <- sum(nation_t1)
+  # National Growth Effect on industry i in the rth region between (t-1) and t.
+  
+  i <- 0
+  NS_tir <- vector()
+  IM_tir <- vector()
+  RS_tir <- vector()
+  for (i in 1:industries) {
+    NS_tir[i] <- (region_t[i] * ((sum_nation_t1/sum_nation_t) - 1))
+    IM_tir[i] <- (region_t[i] * ((nation_t1[i]/nation_t[i]) - (sum_nation_t1/sum_nation_t)))
+    RS_tir[i] <- (region_t[i] * ((region_t1[i]/region_t[i]) - (nation_t1[i]/nation_t[i])))
+  }
+  shifts <- list(NS_tir = NS_tir, IM_tir = IM_tir, RS_tir = RS_tir)
+  
+  return(shifts)
+}
+
+results <- shift.2(mun_t0, mun_t1,
+                   piaui_t0, piaui_t1)
+
+industrias = colnames(emprego_t0)[-zero_in_both_years]
+
+tabela <- cbind(Ns = results$NS_tir,IM =  results$IM_tir, RS = results$RS_tir)
+tabela = as.data.frame(tabela, row.names= industrias)
+tabela[is.na(tabela)] <- 0
+
+row_sub = apply(tabela, 1, function(row) all(row !=0 ))
+##Subset as usual
+View(tabela[row_sub,])
+
+shift.arcelus <- function(region_t, region_t1, nation_t, nation_t1) {
+  
+  industries <- length(region_t)
+  
+  sum_region_t <- sum(region_t)
+  sum_region_t1 <- sum(region_t1)
+  sum_nation_t <- sum(nation_t)
+  sum_nation_t1 <- sum(nation_t1)
+  # National Growth Effect on industry i in the rth region between (t-1) and t.
+  
+  i <- 0
+  # novos componentes de taxas de crescimento e homotetico
+  h <- vector()
+  G <- vector()
+  g <- vector()
+  gi <- vector()
+  Gi <- vector()
+  
+  
+  # NS_tir <- vector()
+  NSE <- vector()
+  NSD <- vector()
+  
+  # IM_tir <- vector()
+  IME <- vector()
+  IMD <- vector()
+  
+  # RS_tir <- vector()
+  RGE <- vector()
+  RGD <- vector()
+  RIE <- vector()
+  RID <- vector()
+  
+  VarTot <- vector()
+  conferencia <- vector()
+  
+  for (i in 1:industries) {
+    h[i] <- region_t[i] * (nation_t[i]/sum_nation_t)
+    
+    G[i] <- (sum_nation_t1 - sum_nation_t)/sum_nation_t
+    
+    g[i] <- (sum_region_t1 - sum_region_t)/sum_region_t
+    
+    gi[i] <- (region_t1[i] - region_t[i])/region_t[i]
+    
+    Gi[i] <- (nation_t1[i] - nation_t[i])/nation_t[i]
+    
+    # componentes
+    
+    NSE[i] <- h[i] * G[i]
+    
+    NSD[i] <- (region_t[i] - h[i]) * G[i]
+    
+    IME[i] <- h[i] * (Gi[i] - G[i])
+    
+    IMD[i] <- (region_t[i] - h[i]) * (Gi[i] - G[i])
+    
+    
+    RGE[i] <- h[i] * (g[i] - G[i])
+    
+    RGD[i] <- (region_t[i] - h[i]) * (g[i] - G[i])
+    
+    RIE[i] <- h[i] * (gi[i] - g[i] - Gi[i] + G[i])
+    
+    RID[i] <- (region_t[i] - h[i]) * (gi[i] - g[i] - Gi[i] + G[i])
+    
+    VarTot[i] <- NSE[i] + NSD[i] + IME[i] + IMD[i] + RGE[i] + RGD[i] + RIE[i] + 
+      RID[i]
+    
+    conferencia[i] <- region_t1[i] - region_t[i]
+    
+  }
+  shifts <- list(NSE = NSE, NSD = NSD, IME = IME, IMD = IMD, RGE = RGE, RGD = RGD, 
+                 RIE = RIE, RID = RID, VarTot = VarTot, conferencia = conferencia)
+  
+  return(shifts)
+}
+
+
+results <- shift.arcelus(mun_t0, mun_t1,
+                         piaui_t0, piaui_t1)
+
+industrias = colnames(emprego_t0)[-zero_in_both_years]
+
+tabela = as.data.frame(results, row.names= industrias)
+tabela[is.na(tabela)] <- 0
+
+row_sub = apply(tabela, 1, function(row) all(row !=0 ))
+##Subset as usual
+View(tabela[row_sub,])
+
+shiftREAT = REAT::shift(mun_t0, mun_t1,
+                        piaui_t0, piaui_t1)
+
+  shift.montania.marquez <- function(region_t, region_t1, nation_t, nation_t1) {
+    
+    industries <- length(region_t)
+    
+    sum_region_t <- sum(region_t)
+    sum_region_t1 <- sum(region_t1)
+    sum_nation_t <- sum(nation_t)
+    sum_nation_t1 <- sum(nation_t1)
+    # National Growth Effect on industry i in the rth region between (t-1) and t.
+    
+    i <- 0
+    # novos componentes de taxas de crescimento e homotetico
+    G <- vector()
+    g <- vector()
+    gi <- vector()
+    Gi <- vector()
+    
+    # NS_tir <- vector()
+    NE <- vector()
+    
+    # IM_tir <- vector()
+    IM <- vector()
+    
+    # RS_tir <- vector()
+    CE <- vector()
+    RIE <- vector()
+    RSE <- vector()
+    RCCE <- vector()
+    
+    VarTot <- vector()
+    conferencia <- vector()
+    
+  
+  for (i in 1:industries) {
+    
+    G[i] <- (sum_nation_t1 - sum_nation_t)/sum_nation_t
+    
+    g[i] <- (sum_region_t1 - sum_region_t)/sum_region_t
+    
+    gi[i] <- (region_t1[i] - region_t[i])/region_t[i]
+    
+    Gi[i] <- (nation_t1[i] - nation_t[i])/nation_t[i]
+    
+    # componentes
+    
+    NE[i] <- G[i]*region_t[i]
+    
+    IM[i] <- (Gi[i] - G[i])*region_t[i]
+    
+    CE[i] <- (gi[i] - Gi[i])*region_t[i]
+    
+    RIE[i] <- (gi[i] - g[i])*region_t[i]
+    
+    RSE[i] <- (g[i] - G[i])*region_t[i]
+    
+    RCCE[i] <- (G[i] - gi[i])*region_t[i]
+    
+    VarTot[i] <- NE[i] + IM[i] + CE[i] + RIE[i] + RSE[i] + RCCE[i]
+    
+    conferencia[i] <- region_t1[i] - region_t[i]
+    
+  }
+  shifts <- list(NE = NE, IM = IM, CE = CE, RIE = RIE, RSE = RSE, RCCE = RCCE, 
+                VarTot = VarTot, conferencia = conferencia)
+  
+  return(shifts)
+  }
+  
+  results <- shift.montania.marquez(mun_t0, mun_t1,
+                           piaui_t0, piaui_t1)
+  
+  industrias = colnames(emprego_t0)[-zero_in_both_years]
+  
+  tabela = as.data.frame(results, row.names= industrias)
+  tabela[is.na(tabela)] <- 0
+  
+  row_sub = apply(tabela, 1, function(row) all(row !=0 ))
+  ##Subset as usual
+  View(tabela[row_sub,])
