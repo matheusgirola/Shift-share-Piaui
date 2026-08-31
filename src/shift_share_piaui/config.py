@@ -10,6 +10,7 @@ import os
 import tomllib
 from dataclasses import dataclass, field, replace
 from pathlib import Path
+from typing import Any
 
 # Referências geográficas usadas como "nação" no shift-share.
 REGIOES: tuple[str, ...] = ("Piauí", "Nordeste", "Brasil")
@@ -267,12 +268,12 @@ class Config:
             f"potencialidades_descricao_{'_'.join(tipos).lower()}_{self.ano_t1_rais}.txt"
         )
 
-    def com(self, **alteracoes) -> "Config":
+    def com(self, **alteracoes: Any) -> Config:
         """Cópia da configuração com alguns campos trocados."""
         return replace(self, **alteracoes)
 
     @classmethod
-    def de_arquivo(cls, raiz: Path | str | None = None) -> "Config":
+    def de_arquivo(cls, raiz: Path | str | None = None) -> Config:
         """Lê ``shift-share.toml`` na raiz do projeto, se existir.
 
         É o que permite versionar os parâmetros do estudo (anos de referência,
@@ -287,7 +288,7 @@ class Config:
         with arquivo.open("rb") as conteudo:
             bruto = tomllib.load(conteudo)
 
-        campos: dict[str, object] = {"raiz": raiz}
+        campos: dict[str, Any] = {"raiz": raiz}
         anos = bruto.get("anos", {})
         for nome in ("ano_t1_rais", "ano_t1_sidra"):
             if nome in anos:
@@ -309,9 +310,7 @@ class Config:
         if "linhas_rais" in dados:
             campos["linhas_rais"] = int(dados["linhas_rais"])
         if "casar_subclasse_normalizada" in dados:
-            campos["casar_subclasse_normalizada"] = bool(
-                dados["casar_subclasse_normalizada"]
-            )
+            campos["casar_subclasse_normalizada"] = bool(dados["casar_subclasse_normalizada"])
         if "fontes_sidra" in dados:
             pedidas = list(dados["fontes_sidra"])
             por_prefixo = {fonte.prefixo: fonte for fonte in FONTES_SIDRA}

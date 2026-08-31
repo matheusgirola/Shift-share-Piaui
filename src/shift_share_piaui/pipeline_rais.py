@@ -15,7 +15,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-from shift_share_piaui.config import REGIOES, Config, DEFAULT_CONFIG
+from shift_share_piaui.config import DEFAULT_CONFIG, REGIOES, Config
 from shift_share_piaui.leitura import (
     COLUNA_MUNICIPIO_RAIS,
     ErroDeLeitura,
@@ -85,8 +85,7 @@ def estoque_de_referencia(
     unidades, matriz = _matriz(regioes)
     if referencia not in unidades:
         raise ErroDeLeitura(
-            f"Referência {referencia!r} ausente do extrato de regiões "
-            f"(disponíveis: {unidades})."
+            f"Referência {referencia!r} ausente do extrato de regiões (disponíveis: {unidades})."
         )
     return matriz[unidades.index(referencia)]
 
@@ -150,9 +149,7 @@ def executar(cfg: Config = DEFAULT_CONFIG, verbose: bool = True) -> dict[str, Pa
     municipios_t1 = formatar_dados_rais(
         cfg.arquivo_rais(cfg.ano_t1_rais, "municipiosPI"), cfg.linhas_rais
     )
-    regioes_t1 = formatar_dados_rais(
-        cfg.arquivo_rais(cfg.ano_t1_rais, "regioes"), cfg.linhas_rais
-    )
+    regioes_t1 = formatar_dados_rais(cfg.arquivo_rais(cfg.ano_t1_rais, "regioes"), cfg.linhas_rais)
     conferir_ano(cfg.arquivo_rais(cfg.ano_t1_rais, "municipiosPI"), cfg.ano_t1_rais)
 
     for ano_t0 in cfg.anos_t0_rais:
@@ -177,7 +174,9 @@ def executar(cfg: Config = DEFAULT_CONFIG, verbose: bool = True) -> dict[str, Pa
     return gravar_por_referencia(consolidado, cfg)
 
 
-def gravar_por_referencia(consolidado: pd.DataFrame, cfg: Config = DEFAULT_CONFIG) -> dict[str, Path]:
+def gravar_por_referencia(
+    consolidado: pd.DataFrame, cfg: Config = DEFAULT_CONFIG
+) -> dict[str, Path]:
     """Grava um arquivo por referência geográfica, como o script em R fazia."""
     from shift_share_piaui.r_compat import escrever_csv_r
 

@@ -9,12 +9,14 @@ inclusive o que acontece quando o estoque inicial é zero: a divisão gera
 from __future__ import annotations
 
 import numpy as np
+import numpy.typing as npt
 import pandas as pd
 
 # Componentes na ordem em que o R os empilhava no data.frame consolidado.
 COMPONENTES: tuple[str, ...] = ("NE", "IM", "CE", "RIE", "RSE", "RCCE")
 
-COLUNAS_RESULTADO: tuple[str, ...] = COMPONENTES + (
+COLUNAS_RESULTADO: tuple[str, ...] = (
+    *COMPONENTES,
     "Estoque_mun_t0",
     "Estoque_mun_t1",
     "Estoque_nac_t0",
@@ -57,11 +59,11 @@ def tipo_regiao(ce: float, rie: float, rse: float) -> str:
         return TIPO_INDEFINIDO
     if any(pd.isna(valor) for valor in valores):
         return TIPO_INDEFINIDO
-    sinais = tuple(int(np.sign(valor)) for valor in valores)
+    sinais = (int(np.sign(ce)), int(np.sign(rie)), int(np.sign(rse)))
     return _TIPOS_POR_SINAL.get(sinais, TIPO_INDEFINIDO)
 
 
-def classificar_regioes(ce, rie, rse) -> np.ndarray:
+def classificar_regioes(ce: npt.ArrayLike, rie: npt.ArrayLike, rse: npt.ArrayLike) -> np.ndarray:
     """Versão vetorizada de :func:`tipo_regiao`."""
     ce = np.asarray(ce, dtype="float64")
     rie = np.asarray(rie, dtype="float64")
@@ -87,10 +89,10 @@ def _status(regiao_t0: np.ndarray, regiao_t1: np.ndarray) -> np.ndarray:
 
 
 def shift_montania_marquez(
-    regiao_t0,
-    regiao_t1,
-    nacao_t0,
-    nacao_t1,
+    regiao_t0: npt.ArrayLike,
+    regiao_t1: npt.ArrayLike,
+    nacao_t0: npt.ArrayLike,
+    nacao_t1: npt.ArrayLike,
 ) -> pd.DataFrame:
     """Decompõe a variação do estoque de cada setor de uma região.
 

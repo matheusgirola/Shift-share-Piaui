@@ -8,7 +8,7 @@ O pacote reúne, em Python, as duas metades que antes viviam separadas:
   :mod:`shift_share_piaui.potencialidades` (tratamento e categorização).
 """
 
-from shift_share_piaui.config import Config, DEFAULT_CONFIG
+from shift_share_piaui.config import DEFAULT_CONFIG, Config
 
-__all__ = ["Config", "DEFAULT_CONFIG"]
+__all__ = ["DEFAULT_CONFIG", "Config"]
 __version__ = "0.1.0"

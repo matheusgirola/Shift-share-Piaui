@@ -17,9 +17,9 @@ import numpy as np
 import pandas as pd
 
 from shift_share_piaui.config import (
+    DEFAULT_CONFIG,
     REGIOES,
     Config,
-    DEFAULT_CONFIG,
     FonteSidra,
 )
 from shift_share_piaui.leitura import (
@@ -63,9 +63,7 @@ def shift_share_de_um_ano(
     partes: list[pd.DataFrame] = []
     for referencia in referencias:
         if referencia not in indice_t0 or referencia not in nomes_t1:
-            raise ErroDeLeitura(
-                f"Referência {referencia!r} ausente do extrato do SIDRA."
-            )
+            raise ErroDeLeitura(f"Referência {referencia!r} ausente do extrato do SIDRA.")
         if verbose:
             print(f"Shift-share SIDRA {ano_t0}->{ano_t1} | referência: {referencia}")
 
@@ -123,6 +121,4 @@ def executar(
 ) -> dict[str, Path]:
     """Roda o shift-share das pesquisas do IBGE configuradas."""
     fontes = cfg.fontes_sidra if fontes is None else fontes
-    return {
-        fonte.prefixo: executar_fonte(fonte, cfg=cfg, verbose=verbose) for fonte in fontes
-    }
+    return {fonte.prefixo: executar_fonte(fonte, cfg=cfg, verbose=verbose) for fonte in fontes}

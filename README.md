@@ -29,6 +29,15 @@ Os testes:
 uv run pytest
 ```
 
+Lint, formatação e checagem de tipos:
+
+```bash
+uv run ruff check .          # lint
+uv run ruff check . --fix    # corrige o que dá para corrigir sozinho
+uv run ruff format .         # formata
+uv run pyrefly check         # checagem de tipos
+```
+
 ## As quatro etapas
 
 | Etapa | Entra | Sai | Vinha de |

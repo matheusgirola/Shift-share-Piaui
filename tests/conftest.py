@@ -8,6 +8,7 @@ cima deles -- o que permite conferir números calculados à mão.
 
 from __future__ import annotations
 
+from collections.abc import Callable
 from pathlib import Path
 
 import pandas as pd
@@ -73,7 +74,13 @@ SIDRA = {
 }
 
 
-def _escrever_rais(caminho: Path, colunas: list[str], estoques: dict, ano: int) -> None:
+# Assinatura de _escrever_rais, devolvida pela fixture escrever_extrato_rais.
+EscritorDeExtratoRais = Callable[[Path, list[str], dict[str, list[int]], int], None]
+
+
+def _escrever_rais(
+    caminho: Path, colunas: list[str], estoques: dict[str, list[int]], ano: int
+) -> None:
     """Reproduz o layout do extrato do BGCAGED, rodapé incluído."""
     linhas = ["Coluna;Unidade", "CNAE 2.0 Subclasse;" + ";".join(colunas)]
     for posicao, subclasse in enumerate(SUBCLASSES_RAIS):
@@ -83,14 +90,12 @@ def _escrever_rais(caminho: Path, colunas: list[str], estoques: dict, ano: int) 
     caminho.write_text("\n".join(linhas) + "\n", encoding="latin-1")
 
 
-def _escrever_sidra(caminho: Path, estoques: dict) -> None:
+def _escrever_sidra(caminho: Path, estoques: dict[str, list[int]]) -> None:
     """Reproduz o layout do extrato do SIDRA, com BOM, aspas e ausentes."""
     cabecalho = ";".join(f'"{nome}"' for nome in ["Município", *PRODUTOS_SIDRA])
     linhas = [cabecalho]
     for unidade, valores in estoques.items():
-        celulas = [f'"{unidade}"'] + [
-            '"-"' if valor == 0 else f'"{valor}"' for valor in valores
-        ]
+        celulas = [f'"{unidade}"'] + ['"-"' if valor == 0 else f'"{valor}"' for valor in valores]
         linhas.append(";".join(celulas))
     caminho.write_text("﻿" + "\n".join(linhas) + "\n", encoding="utf-8")
 
@@ -118,9 +123,7 @@ def projeto(tmp_path: Path) -> Config:
             ano,
         )
     for ano, estoques in SIDRA.items():
-        _escrever_sidra(
-            dados / f"PPM_Efetivo_rebanhos_{ano}_municipiosPI.csv", estoques
-        )
+        _escrever_sidra(dados / f"PPM_Efetivo_rebanhos_{ano}_municipiosPI.csv", estoques)
 
     pd.DataFrame(
         {
@@ -140,9 +143,7 @@ def projeto(tmp_path: Path) -> Config:
         }
     ).to_excel(tabelas / "territorios_desenvolvimento.xlsx", index=False)
 
-    DICIONARIO_CNAE.to_csv(
-        tabelas / "dicionario_cnae_subclasse.csv", index=False, encoding="utf-8"
-    )
+    DICIONARIO_CNAE.to_csv(tabelas / "dicionario_cnae_subclasse.csv", index=False, encoding="utf-8")
 
     (tmp_path / "shift-share.toml").write_text(
         "\n".join(
@@ -176,7 +177,7 @@ def projeto(tmp_path: Path) -> Config:
 
 
 @pytest.fixture
-def escrever_extrato_rais():
+def escrever_extrato_rais() -> EscritorDeExtratoRais:
     """Permite a um teste reescrever um extrato da RAIS do projeto."""
     return _escrever_rais
 

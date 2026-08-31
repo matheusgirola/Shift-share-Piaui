@@ -67,10 +67,11 @@ def formatar_dados_sidra(caminho: Path | str) -> pd.DataFrame:
             f"encontrei {bruto.columns[0]!r}"
         )
 
+    def limpar_estoque(coluna: pd.Series) -> pd.Series:
+        return coluna.astype("string").str.strip().replace(list(AUSENTES_SIDRA), "0")
+
     estoques = bruto.columns.drop(COLUNA_MUNICIPIO_SIDRA)
-    bruto[estoques] = bruto[estoques].apply(
-        lambda coluna: coluna.astype("string").str.strip().replace(list(AUSENTES_SIDRA), "0")
-    )
+    bruto[estoques] = bruto[estoques].apply(limpar_estoque)
     bruto[COLUNA_MUNICIPIO_SIDRA] = bruto[COLUNA_MUNICIPIO_SIDRA].astype("string").str.strip()
     return _para_inteiro(bruto, COLUNA_MUNICIPIO_SIDRA, caminho)
 
@@ -99,9 +100,7 @@ def formatar_dados_rais(caminho: Path | str, linhas: int = 1363) -> pd.DataFrame
             f"encontrei {bruto.columns[0]!r}"
         )
     if len(bruto) != linhas:
-        raise ErroDeLeitura(
-            f"{caminho.name}: esperava {linhas} subclasses, encontrei {len(bruto)}"
-        )
+        raise ErroDeLeitura(f"{caminho.name}: esperava {linhas} subclasses, encontrei {len(bruto)}")
 
     subclasses = bruto[COLUNA_SUBCLASSE_RAIS].astype("string").str.strip().tolist()
     estoques = bruto.drop(columns=[COLUNA_SUBCLASSE_RAIS])

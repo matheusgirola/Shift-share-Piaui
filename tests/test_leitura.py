@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+from pathlib import Path
+
 import pytest
 
 from shift_share_piaui.config import Config
@@ -34,9 +36,7 @@ def test_rais_recusa_arquivo_com_menos_linhas_que_o_esperado(projeto: Config):
 
 
 def test_sidra_traz_agregados_e_municipios_na_mesma_coluna(projeto: Config):
-    dados = formatar_dados_sidra(
-        projeto.dados / "PPM_Efetivo_rebanhos_2013_municipiosPI.csv"
-    )
+    dados = formatar_dados_sidra(projeto.dados / "PPM_Efetivo_rebanhos_2013_municipiosPI.csv")
 
     assert dados["Município"].tolist() == [
         "Brasil",
@@ -49,7 +49,7 @@ def test_sidra_traz_agregados_e_municipios_na_mesma_coluna(projeto: Config):
     assert list(dados.columns) == ["Município", "Bovino", "Suíno...total"]
 
 
-def test_sidra_converte_ausentes_para_zero(projeto: Config, tmp_path):
+def test_sidra_converte_ausentes_para_zero(projeto: Config, tmp_path: Path):
     caminho = tmp_path / "PPM_teste.csv"
     caminho.write_text(
         '﻿"Município";"Bovino"\n"Brasil";"-"\n"Acauã (PI)";"..."\n',
@@ -60,11 +60,9 @@ def test_sidra_converte_ausentes_para_zero(projeto: Config, tmp_path):
     assert dados["Bovino"].dtype == "int64"
 
 
-def test_sidra_recusa_valor_que_nao_e_numero(tmp_path):
+def test_sidra_recusa_valor_que_nao_e_numero(tmp_path: Path):
     caminho = tmp_path / "PPM_quebrado.csv"
-    caminho.write_text(
-        '﻿"Município";"Bovino"\n"Brasil";"mil e duzentos"\n', encoding="utf-8"
-    )
+    caminho.write_text('﻿"Município";"Bovino"\n"Brasil";"mil e duzentos"\n', encoding="utf-8")
     with pytest.raises(ErroDeLeitura, match="não numéricos"):
         formatar_dados_sidra(caminho)
 

@@ -22,11 +22,9 @@ from shift_share_piaui.tratamento import formatar_texto_producao, remover_uf
 ANO_T0, ANO_T1 = 2013, 2024
 COMPONENTES = ["NE", "IM", "CE", "RIE", "RSE", "RCCE"]
 
-_FONTE = next(
-    f for f in DEFAULT_CONFIG.fontes_sidra if f.prefixo == "PPM_Efetivo_rebanhos"
-)
-_REFERENCIA_R = DEFAULT_CONFIG.raiz / "python" / (
-    f"Shift_share_todos_tipos_{ANO_T0}_bruto_brasil.xlsx"
+_FONTE = next(f for f in DEFAULT_CONFIG.fontes_sidra if f.prefixo == "PPM_Efetivo_rebanhos")
+_REFERENCIA_R = (
+    DEFAULT_CONFIG.raiz / "python" / (f"Shift_share_todos_tipos_{ANO_T0}_bruto_brasil.xlsx")
 )
 _ENTRADAS = [
     DEFAULT_CONFIG.arquivo_sidra(_FONTE, ANO_T0),
@@ -45,9 +43,7 @@ def resultado_r() -> pd.DataFrame:
     abas = pd.ExcelFile(_REFERENCIA_R)
     partes = [pd.read_excel(abas, aba) for aba in abas.sheet_names]
     completo = pd.concat(partes, ignore_index=True)
-    return completo[
-        (completo["Fonte"] == "PPM") & (completo["Unidade de medida"] == "cabeças")
-    ]
+    return completo[(completo["Fonte"] == "PPM") & (completo["Unidade de medida"] == "cabeças")]
 
 
 @pytest.fixture(scope="module")
@@ -66,27 +62,25 @@ def resultado_python() -> pd.DataFrame:
     return calculado
 
 
-def _alinhar(
-    resultado_r: pd.DataFrame, resultado_python: pd.DataFrame
-) -> pd.DataFrame:
+def _alinhar(resultado_r: pd.DataFrame, resultado_python: pd.DataFrame) -> pd.DataFrame:
     chave = ["NM_MUN", "subclasse"]
-    return resultado_r.merge(
-        resultado_python, on=chave, suffixes=("_r", "_py"), validate="1:1"
-    )
+    return resultado_r.merge(resultado_python, on=chave, suffixes=("_r", "_py"), validate="1:1")
 
 
-def test_o_recorte_de_referencia_nao_esta_vazio(resultado_r):
+def test_o_recorte_de_referencia_nao_esta_vazio(resultado_r: pd.DataFrame):
     assert len(resultado_r) > 100
 
 
-def test_todas_as_linhas_do_r_foram_reencontradas(resultado_r, resultado_python):
+def test_todas_as_linhas_do_r_foram_reencontradas(
+    resultado_r: pd.DataFrame, resultado_python: pd.DataFrame
+):
     alinhado = _alinhar(resultado_r, resultado_python)
     assert len(alinhado) == len(resultado_r)
 
 
 @pytest.mark.parametrize("componente", COMPONENTES)
 def test_cada_componente_bate_com_o_resultado_do_r(
-    resultado_r, resultado_python, componente
+    resultado_r: pd.DataFrame, resultado_python: pd.DataFrame, componente: str
 ):
     alinhado = _alinhar(resultado_r, resultado_python)
     assert alinhado[f"{componente}_py"].to_numpy() == pytest.approx(
@@ -95,12 +89,11 @@ def test_cada_componente_bate_com_o_resultado_do_r(
 
 
 def test_estoques_e_classificacao_batem_com_o_resultado_do_r(
-    resultado_r, resultado_python
+    resultado_r: pd.DataFrame, resultado_python: pd.DataFrame
 ):
     alinhado = _alinhar(resultado_r, resultado_python)
     for coluna in ["Estoque_mun_t0", "Estoque_mun_t1", "Estoque_nac_t0", "Estoque_nac_t1"]:
         assert alinhado[f"{coluna}_py"].tolist() == alinhado[f"{coluna}_r"].tolist()
     assert (
-        alinhado["classificacao_regiao_py"].tolist()
-        == alinhado["classificacao_regiao_r"].tolist()
+        alinhado["classificacao_regiao_py"].tolist() == alinhado["classificacao_regiao_r"].tolist()
     )

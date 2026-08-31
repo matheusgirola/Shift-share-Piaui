@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+from pathlib import Path
+
 import pandas as pd
 import pytest
 
@@ -19,7 +21,7 @@ def test_tipo_invalido_e_recusado():
         construir_parser().parse_args(["potencialidades", "--tipos", "T99"])
 
 
-def test_sidra_pela_linha_de_comando(projeto: Config, capsys):
+def test_sidra_pela_linha_de_comando(projeto: Config, capsys: pytest.CaptureFixture[str]):
     assert main(["--raiz", str(projeto.raiz), "--silencioso", "sidra"]) == 0
     assert projeto.consolidado_sidra(projeto.fontes_sidra[0]).exists()
     assert "shift-share-consolidado_ppm" in capsys.readouterr().out
@@ -39,7 +41,7 @@ def test_pipeline_completo_pela_linha_de_comando(projeto: Config):
     assert projeto.binario(("T1", "T2")).exists()
 
 
-def test_raiz_aponta_para_outro_projeto(projeto: Config, tmp_path):
+def test_raiz_aponta_para_outro_projeto(projeto: Config, tmp_path: Path):
     # Sem --raiz o pipeline usaria o repositório instalado; com ela, escreve
     # apenas dentro do projeto indicado.
     main(["--raiz", str(projeto.raiz), "--silencioso", "sidra"])
@@ -68,7 +70,7 @@ def test_pesquisa_desconhecida_no_arquivo_de_configuracao(projeto: Config):
         ConfigDeArquivo.de_arquivo(projeto.raiz)
 
 
-def test_projeto_sem_arquivo_de_configuracao_usa_os_padroes(tmp_path):
+def test_projeto_sem_arquivo_de_configuracao_usa_os_padroes(tmp_path: Path):
     from shift_share_piaui.config import Config as ConfigDeArquivo
 
     padrao = ConfigDeArquivo.de_arquivo(tmp_path)

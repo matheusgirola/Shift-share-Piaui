@@ -1,17 +1,16 @@
 """Linha de comando do pipeline.
 
-    uv run ssp-shift-share tudo            # roda as quatro etapas em ordem
-    uv run ssp-shift-share rais            # só o shift-share da RAIS
-    uv run ssp-shift-share sidra           # só o das pesquisas do IBGE
-    uv run ssp-shift-share tratamento      # consolida por tipo de região
-    uv run ssp-shift-share potencialidades --tipos T1 T2
+uv run ssp-shift-share tudo            # roda as quatro etapas em ordem
+uv run ssp-shift-share rais            # só o shift-share da RAIS
+uv run ssp-shift-share sidra           # só o das pesquisas do IBGE
+uv run ssp-shift-share tratamento      # consolida por tipo de região
+uv run ssp-shift-share potencialidades --tipos T1 T2
 """
 
 from __future__ import annotations
 
 import argparse
 import sys
-from pathlib import Path
 
 from shift_share_piaui.config import ARQUIVO_DE_CONFIGURACAO, TIPOS, Config
 
@@ -85,15 +84,13 @@ def construir_parser() -> argparse.ArgumentParser:
     )
 
     comandos = parser.add_subparsers(dest="comando", required=True)
-    comandos.add_parser("rais", help="Shift-share dos vínculos da RAIS.").set_defaults(
-        funcao=_rais
-    )
+    comandos.add_parser("rais", help="Shift-share dos vínculos da RAIS.").set_defaults(funcao=_rais)
     comandos.add_parser(
         "sidra", help="Shift-share das pesquisas agropecuárias do IBGE."
     ).set_defaults(funcao=_sidra)
-    comandos.add_parser(
-        "tratamento", help="Consolida as bases por tipo de região."
-    ).set_defaults(funcao=_tratamento)
+    comandos.add_parser("tratamento", help="Consolida as bases por tipo de região.").set_defaults(
+        funcao=_tratamento
+    )
 
     potencialidades = comandos.add_parser(
         "potencialidades", help="Categoriza as potencialidades e gera os recortes."

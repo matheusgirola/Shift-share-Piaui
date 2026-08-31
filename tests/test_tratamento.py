@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+from pathlib import Path
+
 import pandas as pd
 import pytest
 
@@ -32,7 +34,7 @@ REBANHOS = next(f for f in FONTES_SIDRA if f.prefixo == "PPM_Efetivo_rebanhos")
         ("PI-SAO JOAO DA FRONTEIRA", "PI.SAO.JOAO.DA.FRONTEIRA"),
     ],
 )
-def test_nome_da_rais_vira_a_forma_usada_nas_colunas(entrada, esperado):
+def test_nome_da_rais_vira_a_forma_usada_nas_colunas(entrada: str, esperado: str):
     assert padronizar_nome_rais(entrada) == esperado
 
 
@@ -56,7 +58,7 @@ def test_remover_uf_tira_o_sufixo_do_sidra():
         ("Bovino", "Bovino"),
     ],
 )
-def test_limpeza_do_rotulo_de_producao(entrada, esperado):
+def test_limpeza_do_rotulo_de_producao(entrada: str, esperado: str):
     assert formatar_texto_producao(entrada) == esperado
 
 
@@ -67,7 +69,7 @@ def test_limpeza_nao_deixa_espacos_dobrados_nem_nas_pontas():
 
 
 # --- tabelas de apoio -------------------------------------------------------
-def test_dicionario_da_cnae_e_deduplicado(tmp_path, projeto: Config):
+def test_dicionario_da_cnae_e_deduplicado(tmp_path: Path, projeto: Config):
     # Duas subclasses com a mesma descrição capitalizada: sem deduplicar, a
     # junção com a RAIS vira um-para-muitos e replica linhas.
     caminho = projeto.tabelas_correlacao / "dicionario_cnae_subclasse.csv"
@@ -97,9 +99,7 @@ def test_dicionario_ausente_da_mensagem_util(projeto: Config):
 
 
 def test_dicionario_sem_as_colunas_certas_e_erro(projeto: Config):
-    pd.DataFrame({"cnae": [1], "nome": ["x"]}).to_csv(
-        projeto.dicionario_cnae, index=False
-    )
+    pd.DataFrame({"cnae": [1], "nome": ["x"]}).to_csv(projeto.dicionario_cnae, index=False)
     with pytest.raises(ErroDeTratamento, match="faltam as colunas"):
         carregar_dicionario_cnae(projeto)
 
@@ -248,9 +248,7 @@ def test_consolidacao_limpa_o_rotulo_do_produto():
             "Fonte": ["PPM"],
         }
     )
-    assert consolidar_por_tipo([base], cods, "T1")["subclasse"].tolist() == [
-        "Suíno total"
-    ]
+    assert consolidar_por_tipo([base], cods, "T1")["subclasse"].tolist() == ["Suíno total"]
 
 
 def test_consolidacao_de_tipo_sem_setor_devolve_quadro_vazio():
@@ -266,7 +264,15 @@ def test_tratamento_grava_uma_aba_por_tipo(projeto_processado: Config):
 
     assert caminho.exists()
     assert pd.ExcelFile(caminho).sheet_names == [
-        "T1", "T2", "T3", "T4", "T5", "T6", "T7", "T8", "T-1",
+        "T1",
+        "T2",
+        "T3",
+        "T4",
+        "T5",
+        "T6",
+        "T7",
+        "T8",
+        "T-1",
     ]
 
 
@@ -340,9 +346,7 @@ def test_normalizacao_pode_ser_desligada():
     from shift_share_piaui.tratamento import completar_dicionario
 
     dicionario = pd.DataFrame({"subclasse": ["Defesa civil"], "Código": [8425600]})
-    completo, sem_codigo = completar_dicionario(
-        dicionario, ["Defesa Civil"], normalizar=False
-    )
+    completo, sem_codigo = completar_dicionario(dicionario, ["Defesa Civil"], normalizar=False)
 
     assert sem_codigo == ["Defesa Civil"]
     assert len(completo) == 1
@@ -352,9 +356,7 @@ def test_subclasse_sem_codigo_gera_aviso_em_vez_de_sumir(projeto_processado: Con
     from shift_share_piaui.r_compat import ler_csv_r
 
     # Dicionário que não cobre uma das duas subclasses do projeto.
-    dicionario = pd.DataFrame(
-        {"subclasse": ["Extração de carvão mineral"], "Código": [510000]}
-    )
+    dicionario = pd.DataFrame({"subclasse": ["Extração de carvão mineral"], "Código": [510000]})
     with pytest.warns(UserWarning, match="sem código no dicionário"):
         tratada = tratar_base_rais(
             ler_csv_r(projeto_processado.consolidado_rais("Brasil")),

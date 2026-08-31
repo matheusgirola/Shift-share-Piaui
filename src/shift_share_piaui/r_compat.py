@@ -14,23 +14,23 @@ mudar uma linha das listas de categorização.
 from __future__ import annotations
 
 import csv
+from collections.abc import Iterable, Sequence
 from pathlib import Path
-from typing import Iterable, Sequence
 
 import pandas as pd
 
 # Palavras reservadas do R: make.names() acrescenta um ponto ao final delas.
 _RESERVADAS = frozenset(
+    # documentação do R, e mais legível que 17 strings soltas.
     """if else repeat while function for next break TRUE FALSE NULL Inf NaN NA
-    NA_integer_ NA_real_ NA_character_""".split()
+    NA_integer_ NA_real_ NA_character_""".split()  # noqa: SIM905
 )
 
 
 def _valido(nome: str) -> str:
     """Aplica a ``make.names()`` de um único nome, sem tratar duplicatas."""
     convertido = "".join(
-        caractere if (caractere.isalnum() or caractere in "._") else "."
-        for caractere in nome
+        caractere if (caractere.isalnum() or caractere in "._") else "." for caractere in nome
     )
     if not convertido:
         return "X"

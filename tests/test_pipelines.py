@@ -6,6 +6,7 @@ import warnings
 
 import pandas as pd
 import pytest
+from conftest import EscritorDeExtratoRais
 
 from shift_share_piaui import pipeline_rais, pipeline_sidra
 from shift_share_piaui.config import FONTES_SIDRA, Config
@@ -21,9 +22,7 @@ def test_referencia_piaui_e_a_soma_dos_municipios(projeto: Config):
     regioes = formatar_dados_rais(projeto.arquivo_rais(2013, "regioes"), 2)
 
     # Acauã (10, 5) + Bom Jesus (4, 20).
-    assert pipeline_rais.estoque_de_referencia(
-        "Piauí", municipios, regioes
-    ).tolist() == [14, 25]
+    assert pipeline_rais.estoque_de_referencia("Piauí", municipios, regioes).tolist() == [14, 25]
 
 
 def test_referencia_brasil_soma_as_grandes_regioes_sem_avisar(projeto: Config):
@@ -82,8 +81,7 @@ def test_rais_calcula_o_shift_share_do_municipio_contra_o_brasil(projeto: Config
     base = ler_csv_r(projeto.consolidado_rais("Brasil"))
 
     linha = base[
-        (base["NM_MUN_RAIS"] == "PI.ACAUA")
-        & (base["subclasse"] == "Extração de carvão mineral")
+        (base["NM_MUN_RAIS"] == "PI.ACAUA") & (base["subclasse"] == "Extração de carvão mineral")
     ].iloc[0]
 
     # Brasil (soma das grandes regiões): 1800 -> 2520, logo G = 0,40.
@@ -97,7 +95,9 @@ def test_rais_calcula_o_shift_share_do_municipio_contra_o_brasil(projeto: Config
     assert linha["classificacao_regiao"] == "T1"
 
 
-def test_rais_pula_municipio_sem_nenhum_vinculo(projeto: Config, escrever_extrato_rais):
+def test_rais_pula_municipio_sem_nenhum_vinculo(
+    projeto: Config, escrever_extrato_rais: EscritorDeExtratoRais
+):
     # Um terceiro município totalmente zerado nos dois anos.
     colunas = ["PI-ACAUA", "PI-BOM JESUS", "PI-VAZIO"]
     por_ano = {
@@ -105,9 +105,7 @@ def test_rais_pula_municipio_sem_nenhum_vinculo(projeto: Config, escrever_extrat
         2020: {"PI-ACAUA": [30, 5], "PI-BOM JESUS": [2, 60], "PI-VAZIO": [0, 0]},
     }
     for ano, estoques in por_ano.items():
-        escrever_extrato_rais(
-            projeto.arquivo_rais(ano, "municipiosPI"), colunas, estoques, ano
-        )
+        escrever_extrato_rais(projeto.arquivo_rais(ano, "municipiosPI"), colunas, estoques, ano)
 
     pipeline_rais.executar(projeto, verbose=False)
     base = ler_csv_r(projeto.consolidado_rais("Brasil"))

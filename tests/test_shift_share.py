@@ -33,7 +33,7 @@ from shift_share_piaui.shift_share import (
         ((-1, -1, -1), "T8"),
     ],
 )
-def test_os_oito_octantes_de_sinais(sinais, esperado):
+def test_os_oito_octantes_de_sinais(sinais: tuple[int, int, int], esperado: str):
     ce, rie, rse = (valor * 3.7 for valor in sinais)
     assert tipo_regiao(ce, rie, rse) == esperado
 
@@ -52,7 +52,7 @@ def test_classificacao_vetorizada_bate_com_a_escalar():
     rie = [1.0, 3.0, 1.0, 1.0, -1.0]
     rse = [1.0, -1.0, 1.0, 1.0, 1.0]
     assert list(classificar_regioes(ce, rie, rse)) == [
-        tipo_regiao(*valores) for valores in zip(ce, rie, rse)
+        tipo_regiao(*valores) for valores in zip(ce, rie, rse, strict=True)
     ]
 
 
@@ -79,9 +79,7 @@ def test_componentes_conferem_com_a_conta_manual():
 
 def test_a_decomposicao_fecha_na_variacao_observada():
     resultado = shift_montania_marquez([10, 20, 7], [20, 20, 3], [40, 60, 30], [80, 70, 25])
-    assert resultado["VarTot"].to_numpy() == pytest.approx(
-        resultado["conferencia"].to_numpy()
-    )
+    assert resultado["VarTot"].to_numpy() == pytest.approx(resultado["conferencia"].to_numpy())
 
 
 def test_status_distingue_setor_vazio_de_setor_que_nasce():
@@ -94,6 +92,7 @@ def test_setor_que_nasce_do_zero_fica_sem_classificacao():
     # entra em nenhum octante.
     resultado = shift_montania_marquez([0, 5], [3, 8], [10, 10], [12, 12])
     assert resultado.loc[0, "classificacao_regiao"] == "T-1"
+    # pyrefly: ignore[no-matching-overload]  # stub do numpy: .loc[0, "CE"] é escalar
     assert np.isnan(resultado.loc[0, "CE"])
     assert resultado.loc[1, "classificacao_regiao"] != "T-1"
 

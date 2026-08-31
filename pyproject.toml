@@ -13,6 +13,8 @@ dependencies = [
 [project.optional-dependencies]
 dev = [
     "pytest>=8.0",
+    "ruff>=0.16",
+    "pyrefly>=1.2",
 ]
 
 [project.scripts]
@@ -32,4 +34,50 @@ addopts = "-q"
 [dependency-groups]
 dev = [
     "pytest>=8.0",
+    "ruff>=0.16",
+    "pyrefly>=1.2",
 ]
+
+[tool.ruff]
+# O código do pacote foi escrito para ~100 colunas; manter isso evita
+# reformatar linha por linha só para adotar o padrão de 88 do Black.
+line-length = 100
+target-version = "py311"
+# O R e o notebook originais são referência histórica e não são mais
+# executados (ver CLAUDE.md). Os dois últimos nomes valem para o layout
+# antigo, antes de tudo ser movido para codigo-legado/.
+extend-exclude = ["codigo-legado", "Economia-Regional-R", "python"]
+
+[tool.ruff.lint]
+select = [
+    "E", "W",  # pycodestyle
+    "F",       # pyflakes
+    "I",       # isort
+    "UP",      # pyupgrade
+    "B",       # flake8-bugbear
+    "SIM",     # flake8-simplify
+    "C4",      # flake8-comprehensions
+    "PTH",     # flake8-use-pathlib
+    "N",       # pep8-naming
+    "NPY",     # regras específicas de numpy
+    "PD",      # pandas-vet
+    "RUF",     # regras específicas do ruff
+]
+ignore = [
+    # O código é escrito em português: as exceções se chamam ErroDeLeitura e
+    # ErroDeTratamento. A N818 exige o sufixo "Error", que só faz sentido em
+    # inglês — "ErroDeLeituraError" seria pior que o problema.
+    "N818",
+]
+
+[tool.ruff.format]
+docstring-code-format = true
+
+[tool.pyrefly]
+# Só o pacote e os testes; o R e o notebook em codigo-legado/ ficam de fora.
+project-includes = ["src", "tests"]
+# O pytest põe tests/ no sys.path, então os testes importam `conftest`
+# diretamente; sem isto o Pyrefly não resolve esse import.
+search-path = ["tests"]
+# Preset `strict`: exige anotação também nos parâmetros, não só no retorno.
+preset = "strict"

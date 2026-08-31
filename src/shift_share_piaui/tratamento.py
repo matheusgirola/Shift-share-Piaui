@@ -11,17 +11,17 @@ from __future__ import annotations
 import re
 import unicodedata
 import warnings
+from collections.abc import Iterable
 from pathlib import Path
-from typing import Iterable
 
 import numpy as np
 import pandas as pd
 
 from shift_share_piaui.config import (
     AGREGADOS_SIDRA,
+    DEFAULT_CONFIG,
     TIPOS,
     Config,
-    DEFAULT_CONFIG,
     FonteSidra,
     Rodada,
 )
@@ -135,7 +135,7 @@ def carregar_dicionario_cnae(cfg: Config = DEFAULT_CONFIG) -> pd.DataFrame:
 # ---------------------------------------------------------------------------
 # Preparação de cada base
 # ---------------------------------------------------------------------------
-def normalizar_rotulo(texto: str) -> str:
+def normalizar_rotulo(texto: object) -> str:
     """Forma canônica de um rótulo de subclasse, para casamento tolerante.
 
     Ignora acentuação, caixa e espaçamento (inclusive o espaço não separável
@@ -143,6 +143,8 @@ def normalizar_rotulo(texto: str) -> str:
     dicionário rótulos que diferem por detalhes tipográficos -- "gás
     liqüefeito" contra "gás liquefeito", "Defesa Civil" contra "Defesa civil".
     """
+    # `object` e o str() são deliberados: as chamadas passam valores vindos de
+    # uma coluna do pandas, que pode trazer NaN em vez de texto.
     decomposto = unicodedata.normalize("NFKD", str(texto))
     sem_acento = "".join(c for c in decomposto if not unicodedata.combining(c))
     return _ESPACOS.sub(" ", sem_acento).strip().casefold()
@@ -177,7 +179,7 @@ def completar_dicionario(
         return dicionario_cnae, pendentes
 
     por_forma_normal: dict[str, set[float]] = {}
-    for rotulo, codigo in zip(dicionario_cnae["subclasse"], dicionario_cnae["Código"]):
+    for rotulo, codigo in zip(dicionario_cnae["subclasse"], dicionario_cnae["Código"], strict=True):
         por_forma_normal.setdefault(normalizar_rotulo(rotulo), set()).add(codigo)
 
     recuperados: list[dict[str, object]] = []
@@ -192,9 +194,7 @@ def completar_dicionario(
 
     if not recuperados:
         return dicionario_cnae, sem_codigo
-    completo = pd.concat(
-        [dicionario_cnae, pd.DataFrame(recuperados)], ignore_index=True
-    )
+    completo = pd.concat([dicionario_cnae, pd.DataFrame(recuperados)], ignore_index=True)
     return completo, sem_codigo
 
 
@@ -205,7 +205,9 @@ def conferir_classificacao_unica(base: pd.DataFrame, contexto: str) -> None:
     dentro do recorte -- foi exatamente o que produziu setores com até seis
     classificações simultâneas na versão original.
     """
-    chave = ["NM_MUN_RAIS", "subclasse"] if "NM_MUN_RAIS" in base.columns else ["NM_MUN", "subclasse"]
+    chave = (
+        ["NM_MUN_RAIS", "subclasse"] if "NM_MUN_RAIS" in base.columns else ["NM_MUN", "subclasse"]
+    )
     contagem = base.groupby(chave, dropna=False)["classificacao_regiao"].nunique()
     if (contagem > 1).any():
         exemplos = contagem[contagem > 1].head(3).index.tolist()
@@ -294,8 +296,7 @@ def consolidar_por_tipo(
     quando o mesmo setor aparece em mais de uma rodada.
     """
     ordem_municipios = {
-        municipio: posicao
-        for posicao, municipio in enumerate(cods_ibge["NM_MUN"].unique())
+        municipio: posicao for posicao, municipio in enumerate(cods_ibge["NM_MUN"].unique())
     }
 
     recortes = []
@@ -316,9 +317,7 @@ def consolidar_por_tipo(
         return pd.concat([base.head(0) for base in bases], ignore_index=True)
 
     consolidado = pd.concat(recortes, ignore_index=True)
-    consolidado = consolidado.sort_values(
-        ["_ordem_municipio", "_ordem_base"], kind="stable"
-    )
+    consolidado = consolidado.sort_values(["_ordem_municipio", "_ordem_base"], kind="stable")
     consolidado = consolidado.drop(columns=["_ordem_municipio", "_ordem_base"])
     # Rede de segurança contra linhas 100% idênticas -- por exemplo, dois
     # produtos cujos rótulos colapsam no mesmo texto depois da limpeza.
@@ -335,9 +334,7 @@ def carregar_bases_da_rodada(
     from shift_share_piaui.r_compat import ler_csv_r
 
     cods_ibge = carregar_cods_ibge(cfg) if cods_ibge is None else cods_ibge
-    dicionario_cnae = (
-        carregar_dicionario_cnae(cfg) if dicionario_cnae is None else dicionario_cnae
-    )
+    dicionario_cnae = carregar_dicionario_cnae(cfg) if dicionario_cnae is None else dicionario_cnae
 
     bases = [
         tratar_base_sidra(

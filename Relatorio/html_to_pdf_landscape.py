@@ -7,8 +7,9 @@ Requisitos
 
 Uso:
     python html_to_pdf_landscape.py [entrada.html] [saida.pdf]
-e.
+
 """
+
 from __future__ import annotations
 
 import argparse
@@ -29,12 +30,8 @@ PAGE_W_MM, PAGE_H_MM = 297, 210  # A4 paisagem
 CONTENT_W_PX = round((PAGE_W_MM - 2 * MARGIN_MM) * MM_TO_PX)
 CONTENT_H_PX = round((PAGE_H_MM - 2 * MARGIN_MM) * MM_TO_PX)
 
-DEFAULT_INPUT = Path(__file__).with_name(
-    "cartilha_mapa_potencialidades_piaui_2026_v2.html"
-)
-DEFAULT_OUTPUT = Path(__file__).with_name(
-    "cartilha_mapa_potencialidades_piaui_2026_v2.pdf"
-)
+DEFAULT_INPUT = Path(__file__).with_name("./cartilha_mapa_potencialidades_piaui_2026_v2.html")
+DEFAULT_OUTPUT = Path(__file__).with_name("./cartilha_mapa_potencialidades_piaui_2026_v2.pdf")
 
 # --------------------------------------------------------------------------
 # JS injetado no navegador: reagrupa o HTML original nos 5 blocos de página,
@@ -134,19 +131,15 @@ def _launch_kwargs() -> dict:
 def convert(input_html: Path, output_pdf: Path) -> None:
     input_url = input_html.resolve().as_uri()
 
-    print_css = PRINT_CSS_TEMPLATE.replace(
-        "__CONTENT_W_PX__", str(CONTENT_W_PX)
-    ).replace("__CONTENT_H_PX__", str(CONTENT_H_PX))
-    fit_js = FIT_TO_PAGE_JS_TEMPLATE.replace(
+    print_css = PRINT_CSS_TEMPLATE.replace("__CONTENT_W_PX__", str(CONTENT_W_PX)).replace(
         "__CONTENT_H_PX__", str(CONTENT_H_PX)
     )
+    fit_js = FIT_TO_PAGE_JS_TEMPLATE.replace("__CONTENT_H_PX__", str(CONTENT_H_PX))
 
     with sync_playwright() as p:
         browser = p.chromium.launch(**_launch_kwargs())
         try:
-            page = browser.new_page(
-                viewport={"width": CONTENT_W_PX, "height": 1600}
-            )
+            page = browser.new_page(viewport={"width": CONTENT_W_PX, "height": 1600})
             page.goto(input_url, wait_until="load", timeout=45000)
 
             page.add_style_tag(content=print_css)

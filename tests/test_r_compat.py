@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+from pathlib import Path
+
 import pandas as pd
 import pytest
 
@@ -30,7 +32,7 @@ from shift_share_piaui.r_compat import escrever_csv_r, ler_csv_r, make_names
         ("if", "if."),
     ],
 )
-def test_make_names_reproduz_o_r(entrada, esperado):
+def test_make_names_reproduz_o_r(entrada: str, esperado: str):
     assert make_names([entrada]) == [esperado]
 
 
@@ -47,7 +49,7 @@ def test_make_names_sem_unique_mantem_repeticoes():
     assert make_names(["Outros", "Outros"], unique=False) == ["Outros", "Outros"]
 
 
-def test_csv_no_formato_do_r_faz_ida_e_volta(tmp_path):
+def test_csv_no_formato_do_r_faz_ida_e_volta(tmp_path: Path):
     original = pd.DataFrame(
         {
             "NM_MUN_RAIS": ["PI.ACAUA", "PI.BOM.JESUS"],
@@ -65,12 +67,10 @@ def test_csv_no_formato_do_r_faz_ida_e_volta(tmp_path):
     pd.testing.assert_frame_equal(ler_csv_r(caminho), original)
 
 
-def test_csv_no_formato_do_r_preserva_ausentes(tmp_path):
+def test_csv_no_formato_do_r_preserva_ausentes(tmp_path: Path):
     # Setores que entram do zero têm VarTot indefinido; o valor precisa voltar
     # como ausente, e não como texto ou zero.
-    caminho = escrever_csv_r(
-        pd.DataFrame({"VarTot": [float("nan"), 1.5]}), tmp_path / "vazio.csv"
-    )
+    caminho = escrever_csv_r(pd.DataFrame({"VarTot": [float("nan"), 1.5]}), tmp_path / "vazio.csv")
     lido = ler_csv_r(caminho)
     assert lido["VarTot"].isna().tolist() == [True, False]
     assert lido["VarTot"].iloc[1] == 1.5

@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import pandas as pd
 import pytest
+from pandas.errors import MergeError
 
 from shift_share_piaui import potencialidades, tratamento
 from shift_share_piaui.config import Config
@@ -36,7 +37,7 @@ from shift_share_piaui.potencialidades import (
         ("Equino", "Equinocultura"),
     ],
 )
-def test_produto_do_ibge_vai_para_a_potencialidade_certa(produto, esperado):
+def test_produto_do_ibge_vai_para_a_potencialidade_certa(produto: str, esperado: str):
     assert classificar_agropecuaria(produto) == esperado
 
 
@@ -67,7 +68,7 @@ def test_produto_desconhecido_fica_sem_categoria():
         (9602501, "Outras atividades de serviço"),
     ],
 )
-def test_faixa_do_codigo_da_cnae_define_a_potencialidade(codigo, esperado):
+def test_faixa_do_codigo_da_cnae_define_a_potencialidade(codigo: int, esperado: str):
     assert classificar_rais("qualquer subclasse", codigo) == esperado
 
 
@@ -118,12 +119,10 @@ def test_categorizar_separa_rais_de_ibge():
             "ANO": [2013, 2013],
         }
     )
-    dicionario = pd.DataFrame(
-        {"subclasse": ["Fabricação de biscoitos"], "Código": [1092900]}
-    )
+    dicionario = pd.DataFrame({"subclasse": ["Fabricação de biscoitos"], "Código": [1092900]})
 
     categorizado = categorizar(empilhado, dicionario)
-    por_setor = dict(zip(categorizado["subclasse"], categorizado["Potencialidade"]))
+    por_setor = dict(zip(categorizado["subclasse"], categorizado["Potencialidade"], strict=True))
     assert por_setor == {"Fabricação de biscoitos": "Indústria", "Bovino": "Bovinocultura"}
     assert "Código" not in categorizado.columns
 
@@ -148,7 +147,10 @@ def test_categorizar_nao_multiplica_linhas_com_dicionario_repetido():
             "Código": [3511500, 3511501],
         }
     )
-    with pytest.raises(Exception):
+    # A validação m:1 do merge é o que barra o dicionário repetido; esperar
+    # MergeError garante que o teste falhe se ela for removida, em vez de
+    # passar por qualquer outra exceção.
+    with pytest.raises(MergeError):
         categorizar(empilhado, dicionario)
 
 
@@ -177,15 +179,14 @@ def test_contagem_conta_setores_por_municipio():
 
 
 def test_binario_zera_municipio_sem_potencialidade():
-    cods = pd.DataFrame(
-        {"NM_MUN": ["Acauã", "Bom Jesus", "Teresina"], "CD_MUN": [1, 2, 3]}
-    )
+    cods = pd.DataFrame({"NM_MUN": ["Acauã", "Bom Jesus", "Teresina"], "CD_MUN": [1, 2, 3]})
     binario = binarizar_potencialidades(contar_potencialidades(_categorizado_falso()), cods)
     linha = binario.set_index("NM_MUN")
 
     assert linha.loc["Acauã", "Bovinocultura"] == 1  # 2 setores viram 1
     assert linha.loc["Bom Jesus", "Bovinocultura"] == 0
     # Município sem nenhum setor entra zerado, não vazio.
+    # pyrefly: ignore[not-callable]  # stub do pandas: .loc devolve Series | DataFrame
     assert linha.loc["Teresina"].drop("CD_MUN").tolist() == [0, 0]
     assert linha["CD_MUN"].tolist() == [1, 2, 3]
 
@@ -193,11 +194,10 @@ def test_binario_zera_municipio_sem_potencialidade():
 def test_subclasses_convertem_mil_reais_linha_a_linha():
     # A bovinocultura mistura cabeças (Bovino) e mil reais (Leite); a conversão
     # tem de olhar a unidade de cada linha.
-    com_valor, binario = subclasses_por_potencialidade(_categorizado_falso())[
-        "Bovinocultura"
-    ]
+    com_valor, binario = subclasses_por_potencialidade(_categorizado_falso())["Bovinocultura"]
     assert com_valor.loc["Acauã", "Bovino"] == 100
     assert com_valor.loc["Acauã", "Leite"] == 7000
+    # pyrefly: ignore[not-callable]  # stub do pandas: .loc devolve Series | DataFrame
     assert binario.loc["Acauã"].tolist() == [1, 1]
 
 

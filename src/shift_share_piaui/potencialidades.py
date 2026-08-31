@@ -23,8 +23,8 @@ import pandas as pd
 
 from shift_share_piaui.config import (
     COLUNAS_POTENCIALIDADES,
-    Config,
     DEFAULT_CONFIG,
+    Config,
 )
 from shift_share_piaui.tratamento import (
     FONTE_RAIS,
@@ -195,9 +195,10 @@ def categorizar(
         dicionario_cnae, rais["subclasse"], normalizar=normalizar_subclasses
     )
     rais = rais.merge(dicionario_cnae, on="subclasse", how="left", validate="m:1")
+    # pyrefly: ignore[unsupported-operation]  # stub do pandas não cobre atribuir list a coluna
     rais["Potencialidade"] = [
         classificar_rais(subclasse, codigo)
-        for subclasse, codigo in zip(rais["subclasse"], rais["Código"])
+        for subclasse, codigo in zip(rais["subclasse"], rais["Código"], strict=True)
     ]
     rais = rais.drop(columns=["Código"])
 
@@ -235,17 +236,11 @@ def binarizar_potencialidades(
     """
     binario = contagem.set_index("NM_MUN")
     binario = (binario != 0).astype("int64")
-    completo = (
-        cods_ibge.set_index("NM_MUN")[["CD_MUN"]]
-        .join(binario, how="left")
-        .reset_index()
-    )
+    completo = cods_ibge.set_index("NM_MUN")[["CD_MUN"]].join(binario, how="left").reset_index()
     colunas_potencialidade = [
         coluna for coluna in completo.columns if coluna not in {"NM_MUN", "CD_MUN"}
     ]
-    completo[colunas_potencialidade] = (
-        completo[colunas_potencialidade].fillna(0).astype("int64")
-    )
+    completo[colunas_potencialidade] = completo[colunas_potencialidade].fillna(0).astype("int64")
     return completo
 
 
@@ -361,18 +356,14 @@ def executar(
     escritos["binario"] = caminho
 
     caminho = cfg.descricao_territorios(tipos)
-    caminho.write_text(
-        descrever_por_territorio(consolidado, territorios), encoding="utf-8"
-    )
+    caminho.write_text(descrever_por_territorio(consolidado, territorios), encoding="utf-8")
     escritos["descricao"] = caminho
 
     pasta_valor = destino / "Subclasses_dummy" / "Com_valor"
     pasta_binario = destino / "Subclasses_dummy" / "Binario"
     pasta_valor.mkdir(parents=True, exist_ok=True)
     pasta_binario.mkdir(parents=True, exist_ok=True)
-    for potencialidade, (com_valor, dummy) in subclasses_por_potencialidade(
-        consolidado
-    ).items():
+    for potencialidade, (com_valor, dummy) in subclasses_por_potencialidade(consolidado).items():
         nome = _nome_de_arquivo(potencialidade.strip() or "Sem_categoria")
         com_valor.to_excel(pasta_valor / f"{nome}_subclasses_com_valor.xlsx")
         dummy.to_excel(pasta_binario / f"{nome}_subclasses_binario.xlsx")
