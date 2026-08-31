@@ -1,0 +1,35 @@
+[project]
+name = "shift-share-piaui"
+version = "0.1.0"
+description = "Pipeline reprodutível de shift-share e mapeamento de potencialidades produtivas do Piauí"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pandas>=2.2",
+    "numpy>=1.26",
+    "openpyxl>=3.1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+]
+
+[project.scripts]
+ssp-shift-share = "shift_share_piaui.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/shift_share_piaui"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+]

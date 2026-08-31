@@ -1,0 +1,55 @@
+# Parâmetros do estudo. Editar aqui muda o pipeline inteiro -- nenhum ano,
+# nenhuma pesquisa e nenhum caminho ficam escritos no código.
+
+[anos]
+# Ano final (t1) de cada comparação. As duas bases têm calendários próprios:
+# a RAIS já tem 2025, as pesquisas agropecuárias do IBGE param em 2024.
+ano_t1_rais = 2025
+ano_t1_sidra = 2024
+
+# Cada rodada é uma comparação temporal: o "há cerca de 10 anos", o "há cerca
+# de 5" e a mais recente. `rotulo` é o que nomeia os arquivos de saída e
+# preenche a coluna ANO.
+[[rodadas]]
+rotulo = 2013
+ano_t0_rais = 2013
+ano_t0_sidra = 2013
+
+[[rodadas]]
+rotulo = 2018
+ano_t0_rais = 2018
+ano_t0_sidra = 2018
+
+[[rodadas]]
+# ATENÇÃO: o script em R calculava 2022 para a RAIS (ANO_T1 - 3), mas o extrato
+# que acompanha o repositório é o de 2023. Se você baixar
+# `vinculos_2022_ClasseCNAE_*.csv`, troque `ano_t0_rais` para 2022 e os
+# resultados voltam a ser idênticos aos das planilhas em `python/`.
+rotulo = 2022
+ano_t0_rais = 2023
+ano_t0_sidra = 2022
+
+[dados]
+# Referência geográfica usada no tratamento. O shift-share é calculado contra
+# as três (Piauí, Nordeste e Brasil), mas o mapa de potencialidades usa só a
+# comparação nacional.
+referencia = "Brasil"
+
+# Quantidade de subclasses da CNAE 2.0 nos extratos do BGCAGED.
+linhas_rais = 1363
+
+# Pesquisas do IBGE presentes em Dados/.
+fontes_sidra = [
+    "PAM_prod_agricola",
+    "PEVS_prod_extracao_vegetal",
+    "PPM_prod_aquicultura",
+    "PPM_prod_origem_animal",
+    "PPM_Efetivo_rebanhos",
+]
+
+# Reencontra no dicionário da CNAE as subclasses cujo rótulo só difere por
+# acento, caixa ou espaçamento (o extrato da RAIS escreve "gás liqüefeito", o
+# dicionário escreve "liquefeito"). Recupera 39 das 61 subclasses que o
+# casamento exato deixava de fora. Ponha `false` para reproduzir exatamente o
+# comportamento do notebook antigo.
+casar_subclasse_normalizada = true

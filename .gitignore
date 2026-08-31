@@ -1,0 +1,20 @@
+# Saídas do pipeline: regeradas por `uv run ssp-shift-share tudo` (~420 MB)
+Resultados/
+
+# Ambiente Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# RStudio
+.Rproj.user/
+.Rhistory
+.RData
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Arquivos temporários do Excel/Word
+~$*
